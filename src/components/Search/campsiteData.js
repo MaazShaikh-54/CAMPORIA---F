@@ -155,7 +155,7 @@ const campsites = [
     {
       id: 20,
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSccIWsXhgtrFLB5gIFlkH2tSAQ68_uz28smvOhLj3lvA&s",
+        "https://5.imimg.com/data5/SELLER/Default/2021/8/LF/HC/DJ/87301506/triveni-camping-1000x1000.jpg",
       campsiteName: "Triveni, Sikkim",
       description: "Experience the spiritual harmony at Triveni, where the Teesta and Rangeet rivers merge in Sikkim's serene embrace.",
       price: "₹1800/night",
@@ -163,7 +163,7 @@ const campsites = [
     {
       id: 21,
       imageUrl:
-        "https://lh3.googleusercontent.com/proxy/wMrxj6cKqw-3qndCjYTqX1BpWUEgOnJSpnRHHQuYb5zP4BQdFLBDzTDDtcohK-8uZCEzRzGePRKY9touVc98o2JpWGdD88b42fobD51sMl_1EvZGavdxNKZczKic1cLwDJA",
+        "https://www.adventureactivities.co.in/himachal-pradesh/images/Spiti-valley.jpg",
       campsiteName: "Spiti Valley, Himachal Pradesh",
       price: "₹2900/night",
     },
