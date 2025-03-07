@@ -1,0 +1,55 @@
+.about-container {
+    padding: 20px;
+    color: #333;
+  }
+  
+  .about-intro, .mission, .why-choose-us, .testimonials {
+    margin-bottom: 2rem;
+  }
+  
+ .about-container h1, .about-container h2 {
+    font-size: 2.5em;
+  }
+  
+  .about-container p {
+    font-size: 2em;
+  }
+  
+  .about-container ul {
+    padding: 1rem;
+    list-style: none;
+  }
+  
+  .about-container ul li {
+    font-size: 2em;
+    padding: 8px 0;
+  }
+  
+  .testimonials {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  #testimonial-list {
+    gap: 15px;
+    margin-top: 3rem;
+    display: flex;
+  }
+  
+  .testimonial {
+    padding: 15px;
+    border-radius: 8px;
+    background: #dedede82;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    font-size: 1.8em;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
