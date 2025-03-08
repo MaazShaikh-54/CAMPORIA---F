@@ -1,0 +1,38 @@
+.detail-container{
+    margin: 2rem; 
+    color: #333;
+    display: flex;
+}
+
+.detail-image{
+    width: 32%;
+    height: 32%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.detail-text{
+    margin-left: 5rem;
+    width: 68%;
+}
+
+.title-campsite{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.detail-p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.detail-p description{
+    font-style: italic;
+}
+
+.detail-btn{
+    display: block;
+    cursor: pointer;
+    margin-top: 2rem;
+}
