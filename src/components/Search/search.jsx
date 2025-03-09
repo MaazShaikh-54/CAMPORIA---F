@@ -37,9 +37,9 @@ const CampsiteList = () => {
     if (!searchTerm.trim() && !hasSearched) {
       setErrorMessage(true);
   
-      // setTimeout(() => {
-      //   setErrorMessage(false);
-      // }, 4800); // Wait before fading out
+      setTimeout(() => {
+        setErrorMessage(false);
+      }, 4800); 
   
       const inputElement = document.querySelector(".search-input");
     inputElement.classList.add("shake");

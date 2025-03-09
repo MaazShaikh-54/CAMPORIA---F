@@ -7,6 +7,8 @@ const campsites = [
       description:
         "Camping by the serene Pangong Lake with stunning views of the Himalayas.",
       price: 2500,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 2,
@@ -16,6 +18,8 @@ const campsites = [
       description:
         "Amidst lush meadows and pine forests, offering enchanting views.",
       price: 2800,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 3,
@@ -23,6 +27,8 @@ const campsites = [
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
       price: 1200,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 4,
@@ -31,6 +37,8 @@ const campsites = [
       campsiteName: "Sarchu, Ladakh",
       description: "Surrounded by majestic mountains and peaceful monasteries.",
       price: 2300,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 5,
@@ -40,6 +48,8 @@ const campsites = [
       description:
         "Amidst lush meadows and pine forests, offering enchanting views.",
       price: 1400,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 6,
@@ -48,6 +58,8 @@ const campsites = [
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
       price: 1400,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 7,
@@ -56,6 +68,8 @@ const campsites = [
       campsiteName: "Nubra Valley, Ladakh",
       description: "Surrounded by majestic mountains and peaceful monasteries.",
       price: 3800,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 8,
@@ -65,6 +79,8 @@ const campsites = [
       description:
         "Embrace the untamed beauty of Gulmarg, where the whispering pines and snow-capped peaks create a canvas of serenity at our exclusive campsite, where adventure meets tranquility.",
       price: 2700,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 9,
@@ -73,6 +89,8 @@ const campsites = [
       campsiteName: "Karjat, Maharashtra",
       description: "Discover serenity nestled in the verdant beauty of Karjat, Maharashtra, where every sunrise paints the sky in hues of tranquility at our enchanting campsite.",
       price: 1600,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 10,
@@ -81,6 +99,8 @@ const campsites = [
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
       price: 1700,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 11,
@@ -89,6 +109,8 @@ const campsites = [
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
       price: 1500,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 12,
@@ -97,6 +119,8 @@ const campsites = [
       campsiteName: "Pushkar Desert, Rajashthan",
       description: "Experience the magic of Rajasthan's Pushkar desert under the stars with our camping adventures.",
       price: 2800,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 13,
@@ -105,6 +129,8 @@ const campsites = [
       campsiteName: "Aru Valley, Kashmir",
       description: "Embrace the tranquility of Kashmir's Aru Valley with our bespoke camping escapades.",
       price: 2100,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 14,
@@ -113,6 +139,8 @@ const campsites = [
       campsiteName: "Pawna Lake, Maharashtra",
       description: "Discover lakeside serenity at Pawna Lake, Maharashtra. Your perfect getaway awaits!",
       price: 1600,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 15,
@@ -121,6 +149,8 @@ const campsites = [
       campsiteName: "Sonamarg, Kashmir",
       description: "Experience the breathtaking beauty of Sonamarg, Kashmir. Nature's paradise beckons!",
       price: 2600,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 16,
@@ -129,6 +159,8 @@ const campsites = [
       campsiteName: "Igatpuri, Maharashtra",
       description: "Embrace the allure of monsoon magic in Igatpuri, Maharashtra. A serene retreat amidst lush greenery awaits.",
       price: 1700,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 17,
@@ -137,6 +169,8 @@ const campsites = [
       campsiteName: "Nashik, Maharashtra",
       description: "Nashik, known for its picturesque vineyards and vibrant cultural heritage, is a captivating blend of natural beauty and historical charm.",
       price: 2000,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 18,
@@ -145,6 +179,8 @@ const campsites = [
       campsiteName: "Matheran, Maharashtra",
       description: "Matheran, a quaint hill station nestled in the Western Ghats, offers a serene escape with its lush greenery and stunning viewpoints.",
       price: 1800,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 19,
@@ -153,6 +189,8 @@ const campsites = [
       campsiteName: "Thar Desert, Rajasthan",
       description: "Explore the vast and mesmerizing landscape of the Thar Desert, where golden sands meet the endless horizon.",
       price: 2400,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 20,
@@ -161,6 +199,8 @@ const campsites = [
       campsiteName: "Triveni, Sikkim",
       description: "Experience the spiritual harmony at Triveni, where the Teesta and Rangeet rivers merge in Sikkim's serene embrace.",
       price: 1800,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 21,
@@ -169,6 +209,8 @@ const campsites = [
       campsiteName: "Spiti Valley, Himachal Pradesh",
       description: "Embark on a journey to the enchanting Spiti Valley, where rugged terrains and pristine beauty create a mesmerizing landscape.",
       price: 2900,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 22,
@@ -177,6 +219,8 @@ const campsites = [
       campsiteName: "Sangla, Himachal Pradesh",
       description: "Sangla, a hidden gem in Himachal Pradesh, offers a tranquil escape amidst the majestic Himalayas.",
       price: 2600,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 23,
@@ -185,6 +229,8 @@ const campsites = [
       campsiteName: "Coorg, Karnataka",
       description: "Coorg, known as the 'Scotland of India', is a serene hill station nestled amidst lush greenery and misty mountains.",
       price: 1900,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 24,
@@ -193,6 +239,8 @@ const campsites = [
       campsiteName: "Dhanaulti, Uttarakhand",
       description: "Dhanaulti, a hidden gem in Uttarakhand, offers a tranquil escape amidst the majestic Himalayas.",
       price: 2000,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 25,
@@ -201,6 +249,8 @@ const campsites = [
       campsiteName: "Cherrapunji, Meghalaya",
       description: "Cherrapunji, known for its lush green landscapes and cascading waterfalls, is a paradise for nature lovers.",
       price: 2200,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 26,
@@ -209,6 +259,8 @@ const campsites = [
       campsiteName: "Alibaug, Maharashtra",
       description: "Alibaug, a coastal town known for its sandy beaches and historic forts, offers a serene escape by the Arabian sea",
       price: 1700,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 27,
@@ -217,6 +269,8 @@ const campsites = [
       campsiteName: "Buffalo island, Andaman",
       description: "Buffalo Island in Andaman offers a unique camping experience surrounded by pristine beaches and lush greenery, perfect for a tranquil getaway.",
       price: 2300,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 28,
@@ -225,6 +279,8 @@ const campsites = [
       campsiteName: "Dandeli, karnataka",
       description: "Dandeli, Karnataka, offers an adventurous camping experience amidst dense forests and the serene Kali River.",
       price: 1900,
+      checkin: 10,
+      checkout: 12,
     },
     {
       id: 29,
@@ -232,7 +288,9 @@ const campsites = [
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rajmachi.jpg",
       campsiteName: "Rajmachi, Maharashtra",
       description: "Rajmachi, Maharashtra, offers a thrilling camping experience with scenic views and historic forts.",
-      price: 2100,   }
+      price: 2100,
+    checkin: 10,
+  checkout: 12,   }
 
 ];
 export default campsites;
