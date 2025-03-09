@@ -1,10 +1,11 @@
 import './index.css';
-import Home from './pages/home';
-import Blog from './pages/blog';
-import Help from './pages/help';
-import Detail from './pages/detail';
-import AboutUs from './pages/aboutus';
-import Bookings from './pages/bookings';
+import Home from './pages/home.jsx';
+import Blog from './pages/blog.jsx';
+import Help from './pages/help.jsx';
+import Detail from './pages/detail.jsx';
+import AboutUs from './pages/aboutus.jsx';
+import Bookings from './pages/bookings.jsx';
+import Payment from './components/Payment/payment.jsx';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/bookings" element={<Bookings />} />
+          <Route path="/payment" element={<Payment />} />
         </Routes>
     </>
   );
