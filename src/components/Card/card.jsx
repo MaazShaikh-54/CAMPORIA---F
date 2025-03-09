@@ -1,6 +1,5 @@
-import PropTypes from "prop-types";
 import './card.css';
-import Button from "../Button/button";
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
 const CampsiteCard = ({ id, imageUrl, campsiteName, price }) => {
@@ -14,7 +13,7 @@ const CampsiteCard = ({ id, imageUrl, campsiteName, price }) => {
           <h3 className="campsite-name">{campsiteName}</h3>
           <div className="campsite-footer">
             <p className="campsite-price ">₹{price} / night</p>
-            <Button text="Book" onClick={() => navigate(`/detail/${id}`)} />
+            <img src="/assets/right-arrow.png" className='goToDetail' onClick={() => navigate(`/detail/${id}`)} />
           </div>
         </div>
       </div>

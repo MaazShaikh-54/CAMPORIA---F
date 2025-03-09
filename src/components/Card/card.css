@@ -13,6 +13,10 @@
   background: #dedede;
   transform: scale(1.05);
 }
+
+.campsite-card:hover .goToDetail{
+    background: #fff;
+  }
   
   .campsite-image {
     width: 100%;
@@ -23,7 +27,7 @@
   }
   
   .campsite-name {
-    font-size: 1.8em;
+    font-size: 2.5em;
     margin-bottom: 0.3em;
   }
   
@@ -36,7 +40,19 @@
   .campsite-price {
     color: #686767;
     font-weight: bold;
-    font-size: 0.88rem;
+    font-size: 1rem;
+  }
+
+  .goToDetail{
+    width: 35px;
+    padding: 0.2rem;
+    border-radius: 50px;
+    border: 2px solid #333;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .goToDetail:hover{
+    transform: scale(1.15);
   }
   
   .campsite-footer .btn{
