@@ -18,7 +18,7 @@ export default function Detail() {
                 <div className="detail-text">
                     <h2 className='title-campsite'>{campsite.campsiteName}</h2>
                     <p className='detail-p description'>{campsite.description}</p>
-                    <p className='detail-p'>Price: {campsite.price}</p>
+                    <p className='detail-p'>Price: ₹{campsite.price}</p>
                     <Button className='detail-btn' text="Book"/>
                 </div>
             </div>

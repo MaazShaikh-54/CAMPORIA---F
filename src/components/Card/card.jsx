@@ -13,7 +13,7 @@ const CampsiteCard = ({ id, imageUrl, campsiteName, price }) => {
         <div>
           <h3 className="campsite-name">{campsiteName}</h3>
           <div className="campsite-footer">
-            <p className="campsite-price ">{price}</p>
+            <p className="campsite-price ">₹{price} / night</p>
             <Button text="Book" onClick={() => navigate(`/detail/${id}`)} />
           </div>
         </div>

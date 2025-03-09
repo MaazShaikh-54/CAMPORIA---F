@@ -4,7 +4,9 @@ const campsites = [
       imageUrl:
         "https://curlytales.com/wp-content/uploads/2020/06/chandra-taal-camping-shikhar-dot-come-e1524569723839-1.jpg",
       campsiteName: "Pangong Lake, Ladakh",
-      price: "₹2500/night",
+      description:
+        "Camping by the serene Pangong Lake with stunning views of the Himalayas.",
+      price: 2500,
     },
     {
       id: 2,
@@ -13,14 +15,14 @@ const campsites = [
       campsiteName: "Yusmarg, Kashmir",
       description:
         "Amidst lush meadows and pine forests, offering enchanting views.",
-      price: "₹2800/night",
+      price: 2800,
     },
     {
       id: 3,
       imageUrl: "https://curlytales.com/wp-content/uploads/2021/11/Camping.jpg",
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
-      price: "₹1200/night",
+      price: 1200,
     },
     {
       id: 4,
@@ -28,7 +30,7 @@ const campsites = [
         "https://www.shutterstock.com/image-photo/trekking-camp-ladakh-region-himalaya-260nw-7177735.jpg",
       campsiteName: "Sarchu, Ladakh",
       description: "Surrounded by majestic mountains and peaceful monasteries.",
-      price: "₹2300/night",
+      price: 2300,
     },
     {
       id: 5,
@@ -37,7 +39,7 @@ const campsites = [
       campsiteName: "Gulmarg, Kashmir",
       description:
         "Amidst lush meadows and pine forests, offering enchanting views.",
-      price: "₹1400/night",
+      price: 1400,
     },
     {
       id: 6,
@@ -45,7 +47,7 @@ const campsites = [
         "https://img.hireacamp.com/m-p2orQ4Lo6cXUGYJvZjspBj0TEjZwhfeZYp4eeE/fit-in/3840x3840/filters:quality(75)/uploads/de03e8d6c6f241b694f8757c188c9f05.jpeg",
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
-      price: "₹1400/night",
+      price: 1400,
     },
     {
       id: 7,
@@ -53,7 +55,7 @@ const campsites = [
         "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRUWGBUWFRUXFRUYFRUWFhcXFRUYHSggGBolHRUVITEiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGy0lICUtLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBEQACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQMEBQIGB//EAEQQAAEDAgQDBgMGAwYDCQAAAAEAAhEDIQQSMUEFUWEGEyJxgZGhsfAUIzJCwdFSYuEHFYKSovFDY7IWJDNEcqPCw9L/xAAaAQACAwEBAAAAAAAAAAAAAAAAAQIDBAUG/8QANREAAgIBAwEECQQCAgMBAAAAAAECEQMEEiExE0FRYQUicYGRobHB8BQy4fEG0SNCFVJTQ//aAAwDAQACEQMRAD8A+Qr0BjBAgQA4RQDhOgCECCEwHCABFAEIoQ4ToAhFAEIoBwnQghFBYQigCEUFjhFAEJ0AQigsIRQWEIoBQigCEUAIoAhFAEIoAhFACKAEDBAgRQwhAChABCYHCqJAgBpiBFACKAcJ0IcIAIToBwihBCdAOEAEIoBwmIIRQBCKAIRQDhOgsIRQWEIoAhFCCEUAQihhCKAUIoBwigsUIoAIQAQigCEUAQigCEUAQgBQigCEUAQihkcKskNAAmIEAOEUA4ToQ4ToAhFCHCdAEIoBwnQghADhABCAsIQKwhOgHCKAIRQBCKAIQAQigCEUFjhOgFCKCwhFBYQigCEUAoRQWEJUAQih2EIoAhACRQBCACEUFlei+VkwZHkTbLpxokV5AIRQDAToQ4RQDhOhDhOgCECHCdAOEUIIToAhFAOEUIIRQBCKAcJgEIoAhFAEIoAhOhBCKAcIoAhFAEIoLCEUFhCKCxQnQWEJUOwhFAKEUAQlQBCKGKEUAQigCE6AzMI45ovdcLRTfaUbMq9UvLr0ZhwnQhgJgMBOhDhFAOE6EOEAEJ0IcJ0AQigHCKEEIoAhFAOEUAQnQBCKAIQIcIoAhOgCEUAQigHCdAEIoQQigsIQMUICwhFBYQigsUIoLCEqHYQigsUIoAhFAEIoDJwn4l5/RW8lG/L0NABdoyDAToQwE6FY0WroBF4BA5qEsqjNQ8RqLaskhXURIMVUgRz/AHWPWZdkaLMUbdk1O4B6LVjdwT8iuXDOoU6IjhOgCEUAQigCEUA4RQghFAEIAcIAIToQQigHCKAIToAhFAOE6EEIoAhFBYQih2EIoLFlToLAtRQWGVKgsMiKCwyIoLEWoodhlSCzDomCPMLy+ndTXtR0pdGagC9FRiOgFKhWDjAnkoykoxcn3Alboq0XS8E/wn0WDBPdm3Pw+BdNVCvM5Yc1SVXjksmqTZJrbjo0QuyYzPxzvFHT5ria+b7Taa8KW2y7R/CPJdbBzji34Gaf7mSQraIhCKEOE6CwhFAEJUAQigHCKEEJ0FjhFAEIoLCEUIcJ0FjDU6CxhhRQtwzTKe0W5DFOUUDlR0KQToW4lbTaBpJUkkVuUrOO7ASolubCmByQgdnL2oaGmBAQO2cFqix2cqNjGAgB5U6CzAwjZcOn6cl5rQx3ZV5HUyuommAu+kYgeYBKjklsg2CVuini6hygRqJJXL1eaXZqNdVbNOKK3WLh5l1xt7Jejm5ZHa7gz8R4OqFMCpB5mOXRPT44R1FS8eBTk3C0aLrC67M2lF2ZFy+DIrG5C81qJXNpm+K4NPCDwC8rvaOnhjTMWX9zJw1aqKrOsqdCsMqKCwyIoLGWIoViyooLFCVDsA1FBZ22nKlQnKjoUkbSO8Zop7Q3iFNG0Nx21MiyUEBSRB2cOukSXANQkDEQihgAigGWp0KwhFAclAznKlQ7AsUaHYd2ltDcItT2hYXRQcGDw+Mx2tpuvOejpRWR34HUz3tNFl128clNWZJcEOPIDeshY/SMksVd5ZgVyM6q6QNbAjzXGyyuMfJGuKpstcLNyOYW/wBFNb5R8UUalerZYdAqDwzPw9Fp4jqeI3fyK1bx9STHvAbrBOnpCv18lHHV0/6IYE3IynHff5rz0m27fU3I1uH/AIB5leg9HW8CMGf95bYF0EjOyQtTojYg1FBZ1lRQrAhFBZzCVDsMqKHYNaihNnWVOhWdtCdEWwKAQIoDtzrIEkcQgdhkRQ7GAnQrGGp0Kx5EUFhlQFhkRQWcwhodjDUqFYEIAWVOgsjISomKEUB57BuAzGRt9fJeT0k1BSbddP79x2MqukX8HYka3udjy8j+y6ui9WTivf5+Hv8AEy5uVYuJxl2nX03+aPSiXZ+f27w017jKebAeflquFOVxS8L+puS7y3hnZA46GLekFb9NJ4cc5LrXHuKMi3NIm4fLn5vOfVXejd2TM5+35leeowos8RZLOuy3+kIXi8+4p079YyY6bD2XnXFp1X9G42MDAaGmxifS1+i9FoWo4lBqn193iYM9uTZaZBuDK3RcZK4szu11JGhSogxgJ0FjhFBYQigsISoVihFDsYCKEMIENADhMLCEBYwECHlQKxQgdjAQIcJgEIAcIFYEJhYsiVBuOwE6E2cEJUNMEDOXAJjVmNVxL5MG310XGy6uSm0n+fA6UcUa5RkMMFeei3GVo3NWjQwboDbDMZMmIHWNV1dHk7NRqrd8uuPd1+Ps7zNlV34E3FGy0EaxPpofmFs9KR3QTXVc+4q0zqTRmsYSSeUed1xYwfPkbG6QPqggAf7ypTyqUUl/YlFp2zW4QzwkxF4Xa9EQ/wCJyow6qXrUTY6MpGaDE/t8lp1rj2co7qZXgvcnVoyqwzEBogAeltb+q4OZ9rJKCpJfnws3R9VNskqODSS3+ENBI33sPX2V8pRxW4eFJ/Xp7yCTkqfjZocIbZw3BXT9GVtlHwZk1T5TNIU11Npj3EeJOVpdyCrzS7ODl4E8a3ySDDOzNDuYRhn2mNS8QyLbJomFKVZRXuE1gMgESNpuo3FukxttctD7ocx+yOBbn4HIYCJlRjKMlaG206OKRa7Q7xoownGfQlJOPUk7vqp0R3DLUCsWVAWMBAWMgIASAGITELMEh0xiExcjTA6CCLHKYChKgFlRQ7I61QNElQnJQVsnCLk6RRxOLa5rg0kG/PTr0WPJq8c4NRbs148MoSVmI6qybyTzER6SvOSnC+eTpJS7iqxlwZGv0VmSLGy3hqgkWmSLaDrPO31qtmlyR7SKavlcdF5+388ynJF0+S3jsSHOcIIABFxEknkV0dXqlklJNNJKvb8SjBjcYp2UHuiP31tb681y5zcV+eBqSsTQRaZtNtBz18lF7l6tg66m5wemIN5NpF7cp2lej9FRSxvnnj3fY5urk7XAuIOaZDmG0gO6wDpyvuoa2cJWpwfF0/d+dR4FJU4v3GZg6YL2i5m5A2AcQfl8VxdNGLypNdfDwv8Ag2ZJNRb/ADoaT+Ez+YzMmbzJJ/X4LoT0m/i/j7W/uY1q6fQm4XhXU3EOggx4geWy1ejoSwtqff3+wr1OWOSKcS7hK+fN4S2DHiBE9bro4NRHLfFU+8zZceyubsp8aq2DACSb2BIjqsXpPOlHs4q35GjRwd7n0FhcQ8UwMhzAxcQCOYUcOqnHCko8rgeTFF5G2+CcYl28bK79VLwKuzj3GdXDw5zmEeIXnULm5XmU5Sg/3I1w2OKUl0JKLnZMpNtU4Tydnsb4Iy27rRcrkhkNv4dtdNlp7SWODUfAzwSc/W8TN4LXM5evxOsrH6M1Dcthr1eNVuN7KvQ0cuwLEUOxgJUKxZUwsC1KgseRFBYu7RQbh910RQbhiknQtx33adEdwBiKDcGRFBuOC1KiViIQMqY6q0CM2V239Vl1GWEVTlTNOCEm7q0YEguIL8p/9Mg7Xj9V51yTyNSnT8a6/A6vKimlZXfRZP4p6tBj0sss4QTrd8FwWKcq6fE4px69dPRV+rXmNl3COBLQY/FyuLATPWFu0k984xk+/wC33/KKMipNo4Di8unUNuZA1IklSU3lct3VLl+/qSpQSrxIYDmydf3KytqcbfUs/bKkTOZlOkQIN5sYv8dOqtyRWOVVVdebK09yLPBn/ezOVpBkE62t5lbPRWSs75qPmyjVx/4+lst8Wh5ApkOJjQiw0M9Fr9INZWlidvyfd33+UU6b1I+uqRJgMKGWFzufrZR0+nWJUuveyvNmc+e4utatKRmbJFMgcOKiySInOUWyaRE96rbLEiB7lBssSOadPMVFR3DctpZyRZWbaKd1ssNbYeSmo8Irb5KWJwZnOyzpkj+LqOvz+eXJp2pdpj4ff5/z9frpx51WyfQs4TiHeOygR1O8a2XQ0+uWae1L3+wpy6fs42aGRdGjHuFkSodnQaihWPKihWdBidCs6DUUKwyJ0Kx5EUG4MiKDcPIihWLImOzksCVD3M4eAASdAJ9kuCcbbpHluN1A8lwmAALiBcT8Y+C8x6VyLK7jdKvmdzSQcI7X15MlxXG3cm1IQefr/ZG5jonqgBWTSRVFtnVMkX3TjJx5QnT4IQYuFGLfUn1JmGGnzHyP7BWriD9q+5B8yQhVME83D4X/AF+CTk2m/F/T+w2qybB4Z9Q2sP4uXlzKt0+nnmfHC8SGXJHGuepuUKAYMo/qV3MWFY47UczJkc3bLlGlA6lXxjRnnLmjrKnRGzkhIkcPCi0SRA5VssRE8qDLEcsplxSUW2NyUUWgwAQFZVFLdsRCALNNvhCsiuCmT9YRahoEyni8GSc9MDONtn/1+ayZsEr7TH+76/z9TVizJLZPp9P4LuGxJnK8iRTDiOZuTHpC6eHPK9uTrtT+pnyYlVw8aLOEqZ2B+k/139FfhyrJBS8SnLB45uI2125g3n7e/VN5EnSF2Utu4vvwzcuYF2kwQP0RGbfVGZTe6mVy0DUqdlit9Cu/FN2E/XJQeVIujgfeKlWcRm0EkachbnaVFTb5RKWOKdEbMYc2WRaJMDWL+qSyO6JPCquhYniYZqM0kxBj4H0SnqNnVBDSb++hN4q38wi2ov8ADZC1K7wejl/1ZOzH0jEPF9jY+xU1nxvvKnpsq6okbVadHA+RVikn0ZBwkuqKXF3jIW7xPlrE+0eqz6qS2OPeatJF71LuPNMrlj2l0kAiWc8ug915mWR48i3N0muPGvqdhw3RaXxKlR7XZiRc3HTp9cljyZITnJ1V9PLy/PgaIxcaRVyLPTLLLmbmrnfeUV4AXosW05YRP15pwavkk7o6y2A6q7b6qojfJfwnDwADVIaLnKTHvyWzFpIpKWZ0vD/ZnyZ23WNWzRbiaQsHtjoRC3LU6eKpTXxRkeDNLlxZawoD9CCBqQZHktGOcJq4tNeRTljPH+5UWXVGfxN9woz1eCH7ppe9EIabPP8AbB/AXfU/4x8f2VD9JaX/AN0XL0fqX/1GCw/8Rnq4D5prXad9Jr4j/QahdwYmhlbnJGXnIg+XNWPU4lHc5KhfpcydUZf2ljpg6ayCLc7rPHV4cjqMvt9S56XLBXJHeFo97mykANbmk2BuAADpJmw3gws0/SOnV3Lp+e/3GiGizPu/PsemwHZKo5mYvpsGXMJN3a22v4SuRm/yzS43WOEpc1fCX1v5GqHoPNJ+vJL2WyXB9mGuyl9YCdR4QW+5KyZf8wSbUcLfv/g0w/x7vlk+X8mhV7GUCPBiRMGxLXfC0e6MP+YQk6nhkvn9/sKfoF/9ZGLhuEugZnNAuJm1nFu8WtIO4I5rrZf8n0mP1YxlLhdyXVX3vz8DDj9A558ykl8WXKPAGO/81RB5Zm2/1LHP/L8cf/wn8jQv8cl/9F8CJvZ8uzxUB7sAkwIMmBEGT7K+H+V6R1ujJX4r/RXP0Blj0kmZnGOAVmEuA8YluZskOjUXEgxvELdh9M6HVeviypS8+LT9vwM8vR2q0/qzhcfLn+TzgxlRrRT0AJF9Y5R6laoajJCCx+DK3ihKTmdMqumZutsZOyLSosUuIVGzDtfZTWdpXZXLBCXVEOIxtR1nOtyUZ5pPhsnDDCPKRW72N/iqJZVBdS7bYxinZYzGJHzCg9S1Hhh2avoJrzzVkcl9GDRzUqc7wlPJXUaXgcNqTPJUwzOba7huNDqNt7J5VcfgEXyMDkrRWSU8S+LukFmWDewMqGOc2k2+5oThG+F32U6vVc3Ok/3MvhfcVa0TbTbmufOk/V6GiN1yQEKsmTkkq1uyuqOmFESMkW2UW2JPyutsMUaTbKHOXRIt0KMiWmOu48uRW2GFSVxZRLI06Z3R4aJJN/BUk6knu3AfGPdUZNHGPNWWw1MnwLD4YENsNAscNMmrNcs1Oi9wjCDvWx/O7p4GOcJ9Qm9Olx4hHLfwPVcOwlO0NEFx22Av8kfporuLllbL7MKwmC0b7fWyjLTwroTjkdnVXglJw/ALnkPrZY8mmjfCL4ysy8V2fptbOUTf4An9FklhrhFlox6HCh3uWLE29H/1UZYntdfnAlW788Td7N9nWuMPvGQgXAgBwj/U74Lk6/LkgrgvH8+RrwYov9x9H4lwSkyg1zXS4tDTvlABiB0zLnajD2enhLdbbtosw5nPLKLVIwX4Xl6HWFgWTnk30afCcHTLgH2BOvID6+BVuJpuMZulJ1fgv7+jKczcYtxXKIO03CKLTkpDwwAALzbSd1rz2tTPs7aVc+5FOBuWJb1TPGYXhbmNdLbtc4kbBoa0i/8AiXSWny52mulfnBVvjjXPUsdg8Y3HVe6qZaTHMJBBJeIzCS42/LyVs/R8MDUpO7fV8Je5dfDqUR1ryRe1d3T5F3HcBxofialCvUqNpOacwec2UNfmyDTNOQwBBiDuulgxaOShCWKNNO+OOqq+/wAavpZlyvMre581S93Pl4Hzni+MfUP3oa6oDPehrWOeDJ8QaAHbXIkRHl6DT6WGCo47UfC269l3Xs6eBycuZ5Fcuvj0v2lOF1Vd37DLZGWn5KhwaVErRDUBVU1JlkWjh4JKryRcnySTSR2xllNY+KIuRJ3Sl2ZDccuYlKLZJSExkJQTi7Buzt7SrJttUJNHRKu3qrI0cAb9IUF1v2kiGpTWPLgu6ZbGdFV9Nc2WKrsvUiKVQWEoVt2Ro6ptTiKSJGU/mr4wogyyynHof9lfFpFbiybA6Vj/AMv/AKqtNp+Dik2Ci6L1BunQD3ywtWOPCM+WT3Mv8FH3hP8ACx5P+P7sfF4UZr1olmJ8M9NwzYcgT/mJPy+aUkaYP6F1tjP1YXVbRYnyaTHXaOUlZpR6s0RZXxjJHq//AKT/APoLPKHJamYWUAU6n85nyLyFDZy0F9Geq4KwBrXDdv6z9ea5ufCnafibMc6L78Z4tba7+X15LFLTRcK8y9T9YMKXFrXOYwMe97RleXOGXPMgsEfgO5XP7LHPK8dclyyfE0O6BEtgjYhaHoot3RHtPEWEw7nMDsriJdeDFnFa+xgpc+X0RR2qqrMbFUh991cR/wC0w/outp4UvzwMmSVv88T5Bweq5mUtm1KsPUB5/wDktOPEpvnxRzFNxXuZrYDtLiaNCs2nUIFR7A7qHNqSfWGrf+hw9pFtdE/tRVHVZVjk77187MyjxBwouow3K4zMX/L1j8oWx6WEsqyu7XwKY6mUMTxJKn8SlXrBgBK0Zs8MKTkUY8cpukV240SQR5FZIekISk4tcdzLpaaSVk7C1wkLXinDLG4lMlKDpnbaAKn2RF5GiRuGhWdiQeSyX7On2JDtCM0FF4iXaHDqKTxklMRpqDgPcRupJbOCSkcFiW0nZyWqLiNMrVGLFmxprkujJlItXIaNdkxN1ZfIVwS0mEmIPVWxi30RW2u9l0UZE8x8QpbiW2zvFUoAHWT5kA/XqrLrgjKN8nWFblp1DuRTb/mcX/8A1BQchqPFea+5fzNaHXEza+g5+ZXQjKPS0YZwl1p8k/BWve/IyBnhmZ2glzT7y0KcYqUr8CPrRjt6X/B7GrhWUgHU3522aXGAZECegIVbaZsjFx8ysMR1t5qLSJKyZmJvM7c+oVbSLU2VOK8cZRe1rg45mujLHTWSNgVmyNR5L8acpUV8JihUwzTo3MaetySMxMchmF+c8lDi/aCtxRdxfFqjOHd5TdkqMawF1iR940OsQRoTssORJzaNMW1C15FajxrENo94+qJIpw57GxDg7NoADJi/kubPfTpPqdGMYcNtdDe/vGoyiH5nOY5rH/igZyxtZ+XKzMHHxCAYOeLXUVp4bu0X7iF8l7hvEq006b2ODyRnOYFoM5ZMNFzFgB7JqPrDvgvP7TtoYY0nPAc/v2sBDy4uJebFptra4VmTC975469fL2GaMIuSb8Ty3Ge0jS8mg9rg6pTPia6IdlpmxA2K6iXq+/7GaTrkg472J+zYdlVhNQvZUMNa45A9sCYG9vVSw5/XUUvr3GSeGk37TxdGkTSfYzLLQZtImNY8R9l2O3jatO6fFMwRxy2S9qPS8C7FfaaVWsK7GCmJDT+JxIJFvy/k15n1yz9LRhxsd3z7OPj3ksejnPvKnE+wNc4U4oEENfkLBJcZy+KI0ub9Pbn6n0g881xx+dxsw6bs489Tz/CuzVbEVmUWsILnBskES4xIE8hPTwlZsubso3XsX55jgm2WsZ2cr4Oo6lWEOaGkjUeMSIO+jh6FdT0Pq4Sm30Ttc+K8TJrcbVcWbPZfsvWxznNo5RlEkuMC0aHfVegz6vFgScvkYMWCWV8GriewWKpNDnNEOIAgzqYHlNvdUv0lhbVflk3oMpnVeGtpMa+scjX6TqTyA1Un6TxRVtkP0GR8sfDeA/a3huHe15Ji5I1n30Jsqp+mNJF1KXJJaDN3FHjHA6uGeGVhkcdjFtIJjz+CcPSWmyOSjJcA9LljVorYThT6tXu6QzumABr09FnfpbTJK31Llo8r6I54nwt9B2SoIcBJG48xqFbh9I6bJC4yXgRlpc0HyjMdBV8c+KXSSIbJrqiJ7gFTPUQUnFk1CT5ITdQ3RaJ00dHBu5exEWWGeTGnT/PkXbJE5wgmY/r5rdLSxb3VyZVnklXcTUqFoHyv/UfJHZqC4QOW98stcNwbnODMpmQfPf2In3WLNGEVdG7TOcnTPUYjs2WltOrSbne7wnM4ZWtF3uGUyCBbQiy42PVvJkqMmkut+fTwr7nTeFKKtL+viZvHOGOo1H5aIySA0EOJ01MhswZGgFvMoxZ8mRcPd5rp9X9SEoxj1X58jzWMqkG9Js72vMm/notkW1Tozymna4L3CcXkMkwQfUbWC6uDNCEJbn1Obn3SlHb3MucV4qDh3Br2kuc2xk6HNp6KjNljLHwaYS2u2efw+Ie4wRTb5tJt7rLixynKm6LZ6pRVqKZZxFKoHZGik8kNc0hliDIve1/kiWB7tidgtS7Xqo1KHB5HjDMx0ikI6m+y2f8AjodHJ2V/rMnXal7r+557iWGq0zBggExlHg12GyxZdPkxVfK7mShqIyk6IqFeoYaGh2YtEZG3O146BVbG+4v7XuPXcNwONcA12FouZaczGuEDcnQEcyrloZP1bS9/+kwespW4N+7/AGz0LW1KYBfg8O6npnZRouyXP4ukk30WPWaOWCO58peH8pM0afWQyuqp/ngz32H7O5sOKpo4cPgmO4pkeYtabmOt1yYz/wCJ5orjr0Ncsi7TZL6s+a8d7QtpPy/ZaTizR5w9IRIH4XWJ1iei245Ka3PvS+hVKag6rp+eJgu7YU98LS1BtQpgSLjQ8wFrXtZS8sPD8+JY4l23FVjGOw9EBrcoikGmJ0zAzpYwb7zZWRUo8qXUreTG+sTEr8XpAGKbYdYhs85v4uYCseSSaldv3kbxNVtpe4ucM45TDHtbTjM38WarIkkWAqQdDtuipZerIqWLHyky7/2gqFvdh7tiHZ3WgERGbqk9NyqoX6mL49Yp0aj8zXiqQ4aOLjLSPKeeytyQyz6qLXtM983Gz0/ZZuHfiO8xuJBBMunvC46zL4AA056nRZdRDUtKMYJLxT7vJd7NGKm25O2aHHse7C1XfYsXTFIWayWkm4kHMCXWHyUVjnONZI2/Hy+KLpScf2v3GFxHtrjaoDTXY4MOZsMpiDYja0FsynHDFyVL5/yVSzuu483jMZiapBc/NBJ/KBe58tVpeKVbUil5L6mlwB+PouDqLngi0tAtPkD9Ss2bAnzOKddOF8mXwlJdEex4Rga2NxIdj6bnM3qnLAsbOvcWPl6LBxjjS6t8t037TRG5dV7D1WA7JfZqlTE4bK4U2lzMwfLzfTIRNhvPqqJOcvWirSrnp39V48Kyfq2ovizKdwerxN76tShlLmHK4Ei40aQ63kVDfNS9SNtvngm1BL1uEeH7Ydl3YMgPYLgeIZjsLETrr7FbceRydKLM88aUbR4qo258J1t+KfZdCCi/3GN2uh23B21g6xm081oUINcSp+ZFqaf7bBteoLBsx5fqsstNNv8AkmpLwNFuIC9H26qzjvGy5gajHES7LfW9uv0Qsj9IQNWPScps+rdieEU62ScrodOYRMC5kfXvdcHU+kHkn2ce/j3d7+B2cWFY4b/DofSvsDDdwkm5uY10jS0Aeizy0cMj3Tu/Jtd99Lor7VrhdDxPbcMbTcwtLiGNIcJLhmc64teJjX83RLT5ZY8iUO7+x5sfaQtnx3GhrSTl31cQDEcua7n65ydbV/PtOY9JCC4Md1cm2WP8sfDyVsc2Ov2/QqeJ31OajgNxPy+CTzYrr/Qdm11IHYhwMWVDz+HI1iTJ+H4uHToQJWjT5IbvWQ3jlHmJ6EcSbDnWa4CxP4QfnKszZN0ZKLrzLlHhN9TNqY5j5a4B15EGAIF401nf3XIza3Kltbvlc/n55C7JXaMmliBqBBBEGPEORCsnnimqFHHKMrs9jwDtY2mLmBrJJi0flAO/pdWx1GOVKXvNUcjVnreB9ui5vjogiR42NcGy60QQZ0O+6z5tSo318qLISUnyfRMPx9honKxxytIytYYkSC0GIkEQuas2+MscY/6NLxetucvnyfKu03C69ao5/wBkq+IS0Gi6XaxcgRtre3UKWPJGCilF+fX/AE/zyKtRLdK0zyOJ7PYtuuBrelCqdf8ACuhCeOS4fx4MVZPBkLOzWKIk4Oo0fzUsu/8ANEK31WvVp/Aax5H4kL+zeIbJOHHlDZ+amsXs+ItmXwZWq8Lqj8VJo88s+gCsjp5y6EJXHqQfZXjYD2UlpMvciHapdQOEqHYe5/ZN6TLXILMvMk+z1en+b9knpsv4yfaLzJ/7vqvgFzNouSfdJ6WbXLRZvbJhwNx1qa/8p5E+YUHpnF2n8iSi2SO7LV9Q4EEbSPcOCfZx75DePL1VfMtYbshjCPCKk6ENLT5beShJYl1k/kWRhlNTh/ZbH0oJp4wgX8LmxfzaVnlHBJVuRdDtI9b+JvYf+8WjLTw2NDS0NOaoXSJcSRNOATmIny5LLPS6dtN5Onu+PPJZHNJd3xo9T2f4s3AMHf0cRRa601ntcHO1scjSTbkVlyvsH2kfW8ieztVtsO1eXiVMOoUq1RogZqbmNaTrBzXtmHLVSU90+0l6o0lCOxuz5fxPsnUYZOFxDeucEdVvhqMTX70VPE3ykzCxXCw25a8X3cNeS0ReKXRlMoSRRNNnP/UVZ2cPBlVvxNqn2dxJ1yAcy90e7QrZTcuJdPaVx0zXKNDA8JxFNwjKRa7TmHs6Fgy4E7o1wU11PsXYms5jHGqYIaIBLcxEjMcrR+65cYdjkc5VwvurNOROcEkelbxug4HK8OIMQAT4uVhqtC1uJ8R693D/AKM/6bIuq+h8u7eYx1eo4MfDA6JaTcs8JsNpB352lLTaac25trnyLMnEVFHzvFcJqn/iW/xe9/XZdXHpklVmGUZMq1eElkEnkJHX9Vpjgxvhv7FM45FyRDhtM3LnepH7KyWmxeZBKTOqfDabpDczj6k/BR/TYI9U/iNKT6MuUuzDzcUKp2zFrmi3IugH3QnpoO/vZPscrVc/Akf2cqNs6mBMWL2mZmN+imsunYv02f8AGQMwDW65N9Oms2tCluwr9sV8CK08v+zHnDDam1w9YO06wpqcGuhF43F8Ky/w3jwpEEsphvId1m9WkSEpQi+CzHl28uKr3HpeHf2itYA1tSswCdDRP6aLJLSp88fM0R1UXw18l/svYj+060Ne95vdzWNAvafGbeQVf6OL6v5k/wBRFdF9DzWP7eYouJGLcAZhoOk9Wm60R0+FdxTLUT6qjDxXaWu/8WIcTpdz/dXJY49K+BS82V9X8ynU4q8iDWe4cszyB7uTU4J8EG5tU5P5kLuLv0zOI5FxI9jKHkXgC3eLIf7zqAQHEDlJhJ5E+aXwBbkqt/FkFTFOOpnqk8shbE+Wcd847/FRWSbdWNwihGs7mUPJJdRbEdCo46E+5+CE3LoPocOxDxuVF5JIkopnVPGvH5ne5Cjvb6kuV0ZZZxisB/4jyB/O6R8VW0n3FiySXeSDjL8wJd18Qa8ekxHxVUoF0cz8Tc4R27fROhgR4AQGTM5haWk9Fjy6VS9viaIanxR6LF9o6Nch9RneNPhLvE6rTzi8B82IAETeCOS5r0Mk7i6f1NSywfdwWOH4ruS6thyxwe11qdR1CoQAIHgBDgL7DSYBVUlK1GTar3r7fcmoxfKSaM/7dh8W372piKNe4E13ua4C1iTAPMZtloSyYXcUnHv4IJxyKm2n3c/iPI8dwdanmcKneNbaSb2sbdOd10MOSD7qZkzQmu+zDNV+5Kv3Gbk+00uztZxE1SYjSAPaAudPXRidNYJPvN3B8DIb+I2/MRp7iFmfpBN8E+yUerPJds+0xwb2MoPJflLi8FpiZENtG40P9bljepSbXCZVkyRx2jBwXbmsQBUc3KSHVC0RUfBm7hJlxABPVT/8bDfvXX2/boVx1XFPofReAYnhmKgUqhabfdeBrhIkANBNoafZZs+bLp+Zx48S21JerT95sHhOAPhguJvBedj06z7FUR9JSfMW17kPsp96M7E8NwUnNSZlsBDnGZ0ETuS0QtEdZma6k+yjXJRwYweTvBh6DALTkYYcSBlzRrJHv0UsmozdNzfv7vYOOLH1pGfW7SOBNMUhTcMzWkjK1zg0uzNGoAaKm0yIBKddJXa4/PjQKXVVRiYPiFQjvKmc3ygxOaCfFlnwCSDzsBC1OXrpLp+cFKb22ynxjGGpILjndpBI/ACRJ2Ega8+i0Kbg00VTW5UYOM7SOe4Me2cvhzTe5uIjTX1WhLmzO8v/AFodOuDLiYG1zAv80SnQ0rMjGVwSXREk9DM/FXxm0qMk4pu6KZqKTmVqJJTrG/KJ8lFyJxXFHD6kp7iLXJwaiW4Nos6W4dCzpbh0IvQ5BRz3ihvJbQ7xPfYbR95zT3+ItoGpyRv8BbRurTYqTy3wwUK6EeZVbidHTanJNS8BNC7xLePaBqN8j0lQckSSLNHFlt9QPX3UWrJqRK3EA3aYPR2UyddLGQd1W42WKXgS0cQ5ovUAOsa6TYg2UHFMak13nb+LydCAW6GId6gW9Eljok8tlQ1KZvDh0E/oreSv1WfchwfLmdTx+MZG2djxMiAA9h3IXkf/ACcn1xxfua+jOw8Ev/Z/J/Y8T2q41jKeegzE16zTlp1M7qYYW1Q6BlDQbgFdPRqGVKcopd6q+730Zc7cHS59y/s+f4prmO8W8wu9GXRnMnFqzhr3Gw84Ut4KLOqWKqU3BzHOY5pBDmmCCJ0I8z7qEoxnFxkrT6jjJwdo9/Q/tCqmnTBhog52sBGZ2kk6Bs3gcwuTH0bBNpc+3uOl+rum0ds7SUaj2lxccoH4szh4SXZsogSHBsCwET5WfpZwi0u/8/sazQk0VndqcLQP3dKxcXOblAaHkl2YtvMeGL2tysfpsuR3J/0Lt8WPhL+yjxjtiars7WgFtjIMEW1A1tPNaMWn2Ku4qyajc7Rl4jtPWqTLudhZunutEcUF0RRLPJ9So7ib3C5IOxm4HmrNqK+0bKUjW5PMn4qZX1JTizYbD6/dHA9z7iu6ompEGjjOlYUdOqyndhRzmTsVCLknIdAXIsKE6ok5NjSCUWFCSARKj0GEosKAFOxUMFPqAIGckqLfIxl9oRfiKjTq8VpkQMNSFiJAveL6a2Pvuq9pKzo8ZbMnD0psN9AMsHeIgeidNBZJU4zTOT/u1OGgiL6lxNj/AAwdDufdUA3cap5pbhqIAJiW+ItywASLA6GRe29yX1HZX/vGnkLBh6V2kB9y4F35p0kaiwjoihFAlAz/2Q==",
       campsiteName: "Nubra Valley, Ladakh",
       description: "Surrounded by majestic mountains and peaceful monasteries.",
-      price: "₹3800/night",
+      price: 3800,
     },
     {
       id: 8,
@@ -62,7 +64,7 @@ const campsites = [
       campsiteName: "Gulmarg, Kashmir",
       description:
         "Embrace the untamed beauty of Gulmarg, where the whispering pines and snow-capped peaks create a canvas of serenity at our exclusive campsite, where adventure meets tranquility.",
-      price: "₹2700/night",
+      price: 2700,
     },
     {
       id: 9,
@@ -70,7 +72,7 @@ const campsites = [
         "https://static.vecteezy.com/system/resources/thumbnails/037/814/596/small_2x/ai-generated-camping-in-the-forest-at-sunset-beautiful-summer-landscape-with-bonfire-and-tent-photo.jpg",
       campsiteName: "Karjat, Maharashtra",
       description: "Discover serenity nestled in the verdant beauty of Karjat, Maharashtra, where every sunrise paints the sky in hues of tranquility at our enchanting campsite.",
-      price: "₹1600/night",
+      price: 1600,
     },
     {
       id: 10,
@@ -78,7 +80,7 @@ const campsites = [
         "https://chasingtrip.com/wp-content/uploads/2023/04/hichem-meghachou-7I-Rj_E9ihI-unsplash-1-1.jpg",
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
-      price: "₹1700/night",
+      price: 1700,
     },
     {
       id: 11,
@@ -86,7 +88,7 @@ const campsites = [
         "https://cf.bstatic.com/xdata/images/hotel/270x200/405709730.jpg?k=136f82313122765d899e79e43b187f1c46d58567f9576ec2b9aab2a0e4f6b80f&o=",
       campsiteName: "Bhandardara, Maharashtra",
       description: "Set by the lakeside with stunning Sahyadri mountain views.",
-      price: "₹1500/night",
+      price: 1500,
     },
     {
       id: 12,
@@ -94,7 +96,7 @@ const campsites = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK3VuK7f1-LYdebzcZ8BUJ6mFPhRPlZ4PreGHdps4Pgg&s",
       campsiteName: "Pushkar Desert, Rajashthan",
       description: "Experience the magic of Rajasthan's Pushkar desert under the stars with our camping adventures.",
-      price: "₹2800/night",
+      price: 2800,
     },
     {
       id: 13,
@@ -102,7 +104,7 @@ const campsites = [
         "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/cb/77/61/aru-eco-resort.jpg?w=1200&h=-1&s=1",
       campsiteName: "Aru Valley, Kashmir",
       description: "Embrace the tranquility of Kashmir's Aru Valley with our bespoke camping escapades.",
-      price: "₹2100/night",
+      price: 2100,
     },
     {
       id: 14,
@@ -110,7 +112,7 @@ const campsites = [
         "https://res.cloudinary.com/dwzmsvp7f/image/upload/f_auto,w_1280/c_crop%2Cg_custom%2Fv1722075253%2Fgmdoh1sqodvhxdgci2ep.jpg",
       campsiteName: "Pawna Lake, Maharashtra",
       description: "Discover lakeside serenity at Pawna Lake, Maharashtra. Your perfect getaway awaits!",
-      price: "₹1600/night",
+      price: 1600,
     },
     {
       id: 15,
@@ -118,7 +120,7 @@ const campsites = [
         "https://media.easemytrip.com/media/Blog/India/637776920813523598/637776920813523598z4Ni0g.jpg",
       campsiteName: "Sonamarg, Kashmir",
       description: "Experience the breathtaking beauty of Sonamarg, Kashmir. Nature's paradise beckons!",
-      price: "₹2600/night",
+      price: 2600,
     },
     {
       id: 16,
@@ -126,7 +128,7 @@ const campsites = [
         "https://blog.weekendthrill.com/wp-content/uploads/2016/07/071416_1116_25AwesomeCa4.png",
       campsiteName: "Igatpuri, Maharashtra",
       description: "Embrace the allure of monsoon magic in Igatpuri, Maharashtra. A serene retreat amidst lush greenery awaits.",
-      price: "₹1700/night",
+      price: 1700,
     },
     {
       id: 17,
@@ -134,7 +136,7 @@ const campsites = [
         "https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/06/19224159/19062017_Camping_01.jpg",
       campsiteName: "Nashik, Maharashtra",
       description: "Nashik, known for its picturesque vineyards and vibrant cultural heritage, is a captivating blend of natural beauty and historical charm.",
-      price: "₹2000/night",
+      price: 2000,
     },
     {
       id: 18,
@@ -142,7 +144,7 @@ const campsites = [
         "https://www.holidify.com/images/cmsuploads/compressed/Campdiaries_20210204165026.jpg",
       campsiteName: "Matheran, Maharashtra",
       description: "Matheran, a quaint hill station nestled in the Western Ghats, offers a serene escape with its lush greenery and stunning viewpoints.",
-      price: "₹1800/night",
+      price: 1800,
     },
     {
       id: 19,
@@ -150,7 +152,7 @@ const campsites = [
         "https://samsanddunesdesertsafaricamps.com/wp-content/uploads/2021/04/Untitled-design-7-1-1024x791.jpg",
       campsiteName: "Thar Desert, Rajasthan",
       description: "Explore the vast and mesmerizing landscape of the Thar Desert, where golden sands meet the endless horizon.",
-      price: "₹2400/night",
+      price: 2400,
     },
     {
       id: 20,
@@ -158,72 +160,79 @@ const campsites = [
         "https://5.imimg.com/data5/SELLER/Default/2021/8/LF/HC/DJ/87301506/triveni-camping-1000x1000.jpg",
       campsiteName: "Triveni, Sikkim",
       description: "Experience the spiritual harmony at Triveni, where the Teesta and Rangeet rivers merge in Sikkim's serene embrace.",
-      price: "₹1800/night",
+      price: 1800,
     },
     {
       id: 21,
       imageUrl:
         "https://www.adventureactivities.co.in/himachal-pradesh/images/Spiti-valley.jpg",
       campsiteName: "Spiti Valley, Himachal Pradesh",
-      price: "₹2900/night",
+      description: "Embark on a journey to the enchanting Spiti Valley, where rugged terrains and pristine beauty create a mesmerizing landscape.",
+      price: 2900,
     },
     {
       id: 22,
       imageUrl:
         "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/fb/d0/5c/ibex-camp-in-sunshine.jpg",
       campsiteName: "Sangla, Himachal Pradesh",
-      price: "₹2600/night",
+      description: "Sangla, a hidden gem in Himachal Pradesh, offers a tranquil escape amidst the majestic Himalayas.",
+      price: 2600,
     },
     {
       id: 23,
       imageUrl:
         "https://farm2.staticflickr.com/1608/25193605803_620c8b84b5_z.jpg",
       campsiteName: "Coorg, Karnataka",
-      price: "₹1900/night",
+      description: "Coorg, known as the 'Scotland of India', is a serene hill station nestled amidst lush greenery and misty mountains.",
+      price: 1900,
     },
     {
       id: 24,
       imageUrl:
         "https://indiathrills.com/wp-content/uploads/2020/11/20201111-Whispering-Pines.jpg",
       campsiteName: "Dhanaulti, Uttarakhand",
-      price: "₹2000/night",
+      description: "Dhanaulti, a hidden gem in Uttarakhand, offers a tranquil escape amidst the majestic Himalayas.",
+      price: 2000,
     },
     {
       id: 25,
       imageUrl:
         "https://tinyurl.com/v6j4j93t",
       campsiteName: "Cherrapunji, Meghalaya",
-      price: "₹2200/night",
+      description: "Cherrapunji, known for its lush green landscapes and cascading waterfalls, is a paradise for nature lovers.",
+      price: 2200,
     },
     {
       id: 26,
       imageUrl:
         "https://wildlakecamping.in/images/gallery/alibaugM/5.webp",
       campsiteName: "Alibaug, Maharashtra",
-      price: "₹1700/night",
+      description: "Alibaug, a coastal town known for its sandy beaches and historic forts, offers a serene escape by the Arabian sea",
+      price: 1700,
     },
     {
       id: 27,
       imageUrl:
         "https://tinyurl.com/5hfyj3zc",
       campsiteName: "Buffalo island, Andaman",
-      price: "₹2300/night",
+      description: "Buffalo Island in Andaman offers a unique camping experience surrounded by pristine beaches and lush greenery, perfect for a tranquil getaway.",
+      price: 2300,
     },
     {
       id: 28,
       imageUrl:
         "https://tinyurl.com/4e323494",
       campsiteName: "Dandeli, karnataka",
-      price: "₹1900/night",
+      description: "Dandeli, Karnataka, offers an adventurous camping experience amidst dense forests and the serene Kali River.",
+      price: 1900,
     },
     {
       id: 29,
       imageUrl:
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rajmachi.jpg",
       campsiteName: "Rajmachi, Maharashtra",
-      price: "₹2100/night",
-    },
+      description: "Rajmachi, Maharashtra, offers a thrilling camping experience with scenic views and historic forts.",
+      price: 2100,   }
 
-  ];
-
+];
 export default campsites;
