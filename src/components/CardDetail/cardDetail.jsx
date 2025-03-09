@@ -1,6 +1,7 @@
 import './cardDetail.css';
 import { useParams } from "react-router-dom";
-import campsites from "../Search/campsiteData"
+import campsites from "../Search/campsiteData";
+import Count from '../Count/count';
 import Button from '../Button/button';
 
 export default function Detail() {
@@ -18,10 +19,17 @@ export default function Detail() {
                 <div className="detail-text">
                     <h2 className='title-campsite'>{campsite.campsiteName}</h2>
                     <p className='detail-p description'>{campsite.description}</p>
-                    <p className='detail-p'>Price: ₹{campsite.price}</p>
-                    <Button className='detail-btn' text="Book"/>
+                    <p className='detail-p'><b>Price: </b> <span className='price'>₹ {campsite.price}</span> per person</p>
+                    <Count/>
+                    <Button className='detail-btn' text="Book" />
+                    <div className="furth_detail">
+                        <li><img src="/assets/clock-black.png" alt="clock" className='clock-icon' /><span className='highlight'>Check in:</span> {campsite.checkin} A.M.</li>
+                        <li><img src="/assets/clock-black.png" alt="clock" className='clock-icon' /><span className='highlight'>Check out:</span> {campsite.checkout} A.M.</li>
+                        <li></li>
+                    </div>
                 </div>
             </div>
+
         </>
     )
 }

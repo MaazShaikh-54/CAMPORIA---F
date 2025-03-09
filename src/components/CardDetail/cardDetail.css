@@ -5,15 +5,14 @@
 }
 
 .detail-image{
-    width: 32%;
-    height: 32%;
+    width: 40%;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .detail-text{
-    margin-left: 5rem;
     width: 68%;
+    margin-left: 5rem;
 }
 
 .title-campsite{
@@ -22,17 +21,39 @@
 }
 
 .detail-p {
+    display: flex;
+    margin: 1rem 0;
     font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
 }
 
-.detail-p description{
+.price{
+    margin: 0 0.5rem;
+}
+
+.description{
     font-style: italic;
 }
 
 .detail-btn{
     display: block;
     cursor: pointer;
+}
+
+.furth_detail{
+    display: flex;
+    list-style: none;
     margin-top: 2rem;
+    font-size: 1.2rem;
+    justify-content: space-between ;
+}
+
+.clock-icon{
+    float: left;
+    margin: 0.1rem;
+    height: 1.5rem;
+}
+
+.highlight{
+    color: #ffab03;
+    font-weight: bold;
 }
