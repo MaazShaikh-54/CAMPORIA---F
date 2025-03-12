@@ -18,8 +18,8 @@ const Footer = () => {
                     </ul>
                     <div className="icons">
                         <h2>Contact Us:</h2>
-                        <Link to="/blog"><a href=""><img src="/assets/instagram.png" alt="ig" className="ig"/></a></Link>
-                        <Link to="/blog"><a href=""><img src="/assets/twitter.png" alt="x" className="x"/></a></Link>
+                        <Link to="/blog"><img src="/assets/instagram.png" alt="ig" className="ig"/></Link>
+                        <Link to="/blog"><img src="/assets/twitter.png" alt="x" className="x"/></Link>
 
                     </div>
                 </div>
