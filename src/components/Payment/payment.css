@@ -1,3 +1,38 @@
+.pay-heading {
+  margin: 0.5rem;
+  display: flex;
+  color: #ffab03;
+  font-size: 2.5rem;
+  justify-content: center;
+}
+
+.booking-title{
+  display: flex;
+  color: #333;
+  font-size: 1.6rem;
+  justify-content: center;
+}
+
 .payment {
-    color: #333;
-  }
+  padding: 2rem;
+  width: 50%;
+  color: #333;
+  display: block;
+  margin: 2rem 0;
+  margin-left: 25%;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+label{
+  display:flex;
+  font-size: 1.3rem;
+}
+
+#name, #phone{
+  width: 99%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
