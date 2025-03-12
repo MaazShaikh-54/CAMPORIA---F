@@ -1,11 +1,11 @@
 .count-container{
-    display: flex;
+    display: block;
     margin: 1rem 0;
     font-size: 1.2rem;
     align-items: center;
 }
 
-.person-btn{
+.person-btn {
     border: none;
     color: white;
     cursor: pointer;
@@ -13,6 +13,14 @@
     border-radius: 5px;
     padding: 0.5rem 1rem;
     background-color: #1e40af;
+    transition: background-color 0.3s ease;
+}
+.addDisabled,
+.subDisabled {
+    background-color: #ccc !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    color: #666; 
 }
 
 .person{
