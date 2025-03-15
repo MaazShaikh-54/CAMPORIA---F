@@ -18,8 +18,8 @@ const navbar = () => {
                     <li className="li-items"><Link to="/aboutus" id='link'>About Us</Link></li>
                     <li className="li-items"><Link to="/help" id='link'>Help</Link></li>
                     <li className="li-items"><Link to="/bookings" id='link'>Bookings</Link></li>
-                    <Button text="Login / Sign up" />
                 </ul>
+                <Button text="Login / Sign up" />
             </nav>
         </header>
     </>
