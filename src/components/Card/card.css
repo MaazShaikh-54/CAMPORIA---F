@@ -1,4 +1,57 @@
 .campsite-card {
+  width: 46%;
+  border: 2px;
+  padding: 0.5em;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 1.2em;
+  background: #dedede3b;
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.campsite-card:hover {
+  background: #dedede;
+  transform: scale(1.02);
+}
+
+.campsite-card:hover .goToDetail {
+  background: #fff;
+}
+
+.campsite-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2.5px;
+  padding-bottom: 0.25em;
+}
+
+.campsite-name {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+}
+
+.campsite-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.campsite-price {
+  color: #686767;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.goToDetail {
+  width: 28px;
+  padding: 0.2rem;
+  border-radius: 50px;
+  border: 1px solid #1a3692;
+}
+
+@media screen and (min-width: 700px){
+  .campsite-card {
     width: 30%;
     border: 2px;
     padding: 1em;
@@ -47,22 +100,6 @@
     width: 35px;
     padding: 0.2rem;
     border-radius: 50px;
-    border: 2px solid #333;
-    transition: transform 0.25s ease-in-out;
+    border: 2px solid #1a3692;
   }
-
-  .goToDetail:hover{
-    transform: scale(1.15);
-  }
-  
-  .campsite-footer .btn{
-      margin-right: 0;
-      padding: 0.5em 1em;
-      border-radius: 1.2em;
-      background-color: #1e40af;
-  }
-
-  .campsite-footer .btn:hover{
-    color: #F8F9FA;
-    background-color:  #123092;
-  }
+}
