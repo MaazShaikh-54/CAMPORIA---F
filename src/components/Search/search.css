@@ -1,78 +1,95 @@
 .searchbox {
-    padding: 4em;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .search-input{
-      width: 50%;
-      padding: 0.4em;
-      font-size: 1.1rem;
-      margin-right: 1em;
-      border-radius: 1em;
-      border: 0.1em solid;
-  }
-  
-  .searchbox .btn{
-      margin-left: 1em;
-      padding: 0.5em 1em;
-      border-radius: 1.5em;
-      background-color: #1e40af;
-  }
-
-  .searchbox .btn:hover {
-    color: #F8F9FA;
-    background-color:  #123092;
-  }
-
-  .card-section {
-    background-color: #F8F9FA;
-  }
-  
-  .campsite-card-container {
-    padding: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    color: #0e1726;
-    justify-content: space-around;
-  }
-
-  .error-message {
-    opacity: 0;
-    top: 23.7%;
-    right: 80%;
-    margin-top: 1em;
-    font-size: 1.2em;
-    color: #c81a1a;
-    padding: 8px 12px;
-    text-align: center;
-    position: absolute;
-    border-radius: 5px;
-    align-items: center;
-    display: inline-block;
-    transform: translateY(-10px);
-    background: rgba(255, 230, 230, 0.9); 
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
 }
-  
+
+.search-input {
+  width: 90%;
+  padding: 0.4em;
+  font-size: 0.9rem;
+  border: 0.1em solid;
+  border-radius: 1.3em;
+}
+
+.search-btn {
+  width: 50px;
+  padding: 0.5em 1em;
+}
+
+.campsite-card-container {
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #0e1726;
+  justify-content: space-around;
+}
+
+.error-message {
+  opacity: 0;
+  top: 23.7%;
+  right: 24.5%;
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: #c81a1a;
+  padding: 8px 12px;
+  text-align: center;
+  position: absolute;
+  border-radius: 5px;
+  align-items: center;
+  display: inline-block;
+  transform: translateY(-10px);
+  background: rgba(255, 230, 230, 0.9);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
 .error-message.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .error-message.hide {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
-  
+
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
 }
 
 .shake {
   animation: shake 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 550px){
+  .searchbox {
+    padding: 4em;
+  }
+  
+  .search-input {
+    width: 50%;
+    font-size: 1.1rem;
+    border-radius: 1em;
+  }
+  
+  .campsite-card-container {
+    padding: 2%;
+  }
+  
+  .error-message {
+    right: 80%;
+  }
 }
