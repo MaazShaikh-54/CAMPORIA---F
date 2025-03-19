@@ -17,7 +17,6 @@
 .nav-logo {
   width: 45px;
   margin: 0.5em 0;
-  cursor: pointer;
 }
 
 .logo-txt {
@@ -70,22 +69,8 @@
 /* ############################################################################################## */
 
 @media screen and (min-width: 768px) {
-  .navbar-container {
-    display: flex;
-    color: #0e1726;
-    overflow: visible;
-    position: relative;
-    align-items: center;
-    background: #f8f9fa;
-    padding: 0.25rem 0.5rem;
-    justify-content: space-between;
-    border-bottom: 1px solid #0e1726;
-  }
-
   .logo {
-    display: flex;
     margin: 0 1em;
-    align-items: center;
   }
 
   .nav-logo {
@@ -96,9 +81,7 @@
 
   .logo-txt {
     cursor: pointer;
-    font-weight: 300;
     font-size: 2.5rem;
-    font-family: "Averia Serif Libre", serif;
   }
 
   .menu{
@@ -144,7 +127,7 @@
 
   .navbar-container .btn:hover {
     color: #f8f9fa;
-    transform: scale(1.05);
+    transform: scale(1.02);
     background-color: #123092;
   }
 }
