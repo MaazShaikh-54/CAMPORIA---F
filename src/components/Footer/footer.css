@@ -11,89 +11,136 @@ body {
 }
 
 .footer {
-    background: linear-gradient(to bottom right, #16318a, #0e1726);
-  }
-  
+  background: linear-gradient(to bottom right, #16318a, #0e1726);
+}
+
+.footer-container {
+  display: block;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+}
+
+.fire-logo {
+  width: 80px;
+  margin: 2em auto;
+}
+
+.footer-logo-txt {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Averia Serif Libre", serif;
+}
+
+.footer-links {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.footer-li-items {
+  padding: 5em 3em;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.footer-li-items a {
+  font-size: 1rem;
+  color: #f2f2f2;
+  font-weight: 300;
+  display: inline-block;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  margin: 1em 6em;
+  justify-content: space-around;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  padding: 0.4em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icons h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1em 0;
+}
+
+.footer .copyright {
+  font-size: small;
+  padding: 1.2em 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 550px) {
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
   }
-  
+
   .footer-logo {
     margin: 3em 6em;
   }
-  
-  .footer-logo .fire-logo {
+
+  .fire-logo {
     width: 100px;
     cursor: pointer;
     margin: 2.5em 5em;
   }
-  
+
   .footer-logo-txt {
     font-size: 3rem;
     cursor: pointer;
-    font-weight: 300;
-    font-family: "Averia Serif Libre", serif;
   }
-  
+
   .footer-links {
-    display: block;
+    margin: 0;
   }
-  
+
   .footer ul {
     margin: 2em 0;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .footer-li-items {
     padding: 3em 6em;
-    display: inline-block;
-    justify-content: space-between;
   }
-  
+
   .footer-li-items a {
-    color: #f2f2f2;
-    font-weight: 300;
     font-size: 1.2rem;
-    display: inline-block;
-    text-decoration: none;
-    justify-content: space-between;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .footer ul li a:hover {
     transform: scale(1.17);
   }
-  
+
   .icons {
-    display: flex;
     margin: 3em 6em;
-    justify-content: space-around;
   }
-  
+
   .icons img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    display: inline-block;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .icons img:hover {
     transform: scale(1.17);
   }
-  
-  .icons h2 {
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 1em 0;
-  }
-  
-  .footer .copyright {
-    font-size: small;
-    padding: 1.2em 0;
-    text-align: center;
-  }
+}
