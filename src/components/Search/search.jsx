@@ -1,6 +1,5 @@
 import "./search.css";
 import Fuse from "fuse.js";
-import Button from "../Button/button";
 import { useState, useEffect } from "react";
 import CampsiteCard from "../Card/card";
 import campsites from "./campsiteData";
@@ -75,7 +74,7 @@ const CampsiteList = () => {
           className="search-input"
           onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
         />
-        <Button text="Search" onClick={handleSearchClick} />
+        <img src="/search-blue.png" alt="search icon" className="search-btn" onClick={handleSearchClick} />
       </div>
       {errorMessage && <div className="error-message show">Type something to explore!</div>}
       <div className="campsite-card-container">
