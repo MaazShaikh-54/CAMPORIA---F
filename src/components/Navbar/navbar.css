@@ -1,40 +1,126 @@
 .navbar-container {
+  display: flex;
+  color: #0e1726;
+  overflow: visible;
+  position: relative;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 0.25rem 0.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #0e1726;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 45px;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
+.logo-txt {
+  font-weight: 300;
+  font-size: 1.7rem;
+  font-family: "Averia Serif Libre", serif;
+}
+
+.li-items, ul Button{
+  display: none;
+}
+
+.menu-icon-btn{
+  border: none;
+  display: block;
+  background: none;
+}
+
+.menu-icon{
+  width: 33px;
+}
+
+.menu{
+  top: 1px;
+  width: 95%;
+  z-index: 10;
+  display: none;
+  list-style: none;
+  position: absolute;
+  align-items: center;
+  background: #1739ab;
+  flex-direction: column;
+}
+
+.menu li .menu-items{
+  display: flex;
+  padding: 0.5em;
+  list-style: none;
+  color: #f8f9fa;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.menu-items:hover{
+  color: #0e1726;
+  background: #f8f9fa;
+}
+
+
+/* ############################################################################################## */
+
+@media screen and (min-width: 768px) {
+  .navbar-container {
     display: flex;
     color: #0e1726;
+    overflow: visible;
     position: relative;
     align-items: center;
-    background: #F8F9FA;
+    background: #f8f9fa;
     padding: 0.25rem 0.5rem;
     justify-content: space-between;
     border-bottom: 1px solid #0e1726;
   }
-  
+
   .logo {
     display: flex;
     margin: 0 1em;
     align-items: center;
   }
-  
-  .navbar-container .nav-logo {
+
+  .nav-logo {
     width: 70px;
     cursor: pointer;
     margin: 2.25em 0em;
   }
-  
+
   .logo-txt {
     cursor: pointer;
     font-weight: 300;
     font-size: 2.5rem;
     font-family: "Averia Serif Libre", serif;
   }
-  
+
+  .menu{
+    display: none;
+  }
+
+  .navbar-container ul, ul Button {
+    display: flex;
+  }
+
+  .menu-icon-btn, .menu {
+    display: none;
+  }
+
   .navbar-container ul li {
     margin: 0 4em;
+    overflow: visible;
     flex-direction: row;
     display: inline-block;
     justify-content: space-between;
   }
-  
+
   .navbar-container ul li a {
     color: #0e1726;
     font-weight: 300;
@@ -43,21 +129,22 @@
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .navbar-container ul li a:hover {
     transform: scale(1.17);
   }
-  
+
   .navbar-container .btn {
     margin: 0 1.5rem;
     padding: 0.5em 1em;
-    background-color:  #1e40af;
+    background-color: #1e40af;
     border-radius: 1em;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .navbar-container .btn:hover {
-    color: #F8F9FA;
+    color: #f8f9fa;
     transform: scale(1.05);
-    background-color:  #123092;
+    background-color: #123092;
   }
+}
