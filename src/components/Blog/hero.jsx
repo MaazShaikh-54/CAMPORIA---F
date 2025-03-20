@@ -9,7 +9,8 @@ const hero = () => {
 
   return (
     <>
-      <div className="home">
+      <div>
+        <img className="home" src="/assets/hero-bg.jpg" alt="" />
         <p className="hero-txt">
           Immerse yourself in nature&apos;s beauty at our serene campsites.
           <br />
