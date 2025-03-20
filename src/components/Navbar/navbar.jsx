@@ -29,6 +29,7 @@ const Navbar = () => {
                             <img className="menu-icon" src="/menu-b.png" alt="Hamburger-menu" />
                         </button>
                     </ul>
+                </nav>
                     {menu && (
                         <div className="menu">
                             <img className='close-btn' src="/close-white.png" alt="close-icon" onClick={()=>{setMenu(false)}} />
@@ -39,7 +40,6 @@ const Navbar = () => {
                             <li className="menu-items"><Link to="/bookings" id='link'>Bookings</Link></li>
                         </div>
                     )}
-                </nav>
             </header>
         </>
     )
