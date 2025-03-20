@@ -41,39 +41,42 @@
 
 .menu{
   top: 0px;
-  width: 95%;
+  z-index: 10;
+  width: 100%;
   display: block;
+  padding: 2.5em 0;
   list-style: none;
   position: absolute;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 1.2em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: linear-gradient(to bottom right, #16318a, #0e1726);
 }
 
 .menu li a{
   display: flex;
-  padding: 0.2em;
-  font-weight: 600;
+  padding: 1em;
+  font-weight: 500;
   list-style: none;
   color: #f8f9fa;
+  font-size: 0.75rem;
   letter-spacing: 2px;
   text-decoration: none;
   justify-content: center;
-  transition: all ease-in-out 0.3s;
 }
 
 .close-btn{
+  right: 4.25%;
   width: 17px;
   padding: 0.1em;
-  position: sticky;
-  margin: 0.5em 0 0 0.5em;
+  position: absolute;
 }
 
 .menu-items a:hover{
   color: #0e1726;
-  transform: scale(1.15);
   background: #f8f9fa;
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 768px) {
