@@ -1,4 +1,63 @@
 .about-container {
+  padding: 10px;
+  color: #333;
+}
+
+.about-intro,
+.mission,
+.why-choose-us,
+.testimonials {
+  margin-bottom: 0.7rem;
+}
+
+.about-container h1,
+.about-container h2 {
+  font-size: 1.85em;
+}
+
+.about-container p {
+  font-size: 1.45em;
+}
+
+.about-container ul {
+  list-style: none;
+}
+
+.about-container ul li {
+  padding: 6px 0;
+  font-size: 1.45em;
+}
+
+.testimonials {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#testimonial-list {
+  gap: 15px;
+  display: block;
+}
+
+.testimonial {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 1.5em 0.5em;
+  background: #dedede82;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-size: 1.8em;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 767px){
+  .about-container {
     padding: 20px;
     color: #333;
   }
@@ -52,4 +111,4 @@
     margin-top: 5px;
     font-weight: bold;
   }
-  
+}
