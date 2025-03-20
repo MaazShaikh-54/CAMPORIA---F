@@ -45,7 +45,6 @@ const Payment = ({ setBooked }) => {
             <h1 className='pay-heading'>Payment</h1>
             <h1 className='booking-title'>Booking camp at {campsite.campsiteName}</h1>
             <div className='payment'>
-                <img src="" alt="" />
                 <form    className="userinfo">
                     <label htmlFor="name">Full Name: </label>
                     <input type="text" id='name' placeholder='Your name...' required />
