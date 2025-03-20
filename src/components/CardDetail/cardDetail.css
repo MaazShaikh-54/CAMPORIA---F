@@ -1,59 +1,116 @@
 .detail-container{
-    margin: 2rem; 
+    margin: 1rem; 
     color: #333;
-    display: flex;
+    display: block;
 }
 
 .detail-image{
-    width: 40%;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .detail-text{
-    width: 68%;
-    margin-left: 5rem;
+    width: 100%;
 }
 
 .title-campsite{
-    font-size: 2rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
 .detail-p {
     display: flex;
-    margin: 1rem 0;
-    font-size: 1.2rem;
+    margin: 0.3rem 0;
+    font-size: 1.01rem;
 }
 
 .price{
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
 }
 
 .description{
     font-style: italic;
 }
 
-.detail-btn{
-    display: block;
-    cursor: pointer;
-}
-
 .furth_detail{
     display: flex;
     list-style: none;
-    margin-top: 2rem;
-    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
     justify-content: space-between ;
 }
 
 .clock-icon{
     float: left;
-    margin: 0.1rem;
-    height: 1.5rem;
+    margin: 0.1rem 0.3rem 0.1rem 0;
+    height: 1.2rem;
 }
 
 .highlight{
     color: #ffab03;
     font-weight: bold;
+}
+
+@media screen and (min-width: 500px) {
+    .detail-container{
+        margin: 2rem; 
+        color: #333;
+        display: flex;
+    }
+    
+    .detail-image{
+        width: 40%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .detail-text{
+        width: 68%;
+        margin-left: 5rem;
+    }
+    
+    .title-campsite{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .detail-p {
+        display: flex;
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+    
+    .price{
+        margin: 0 0.5rem;
+    }
+    
+    .description{
+        font-style: italic;
+    }
+    
+    .detail-btn{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .furth_detail{
+        display: flex;
+        list-style: none;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        justify-content: space-between ;
+    }
+    
+    .clock-icon{
+        float: left;
+        margin: 0.1rem;
+        height: 1.5rem;
+    }
+    
+    .highlight{
+        color: #ffab03;
+        font-weight: bold;
+    }
 }
