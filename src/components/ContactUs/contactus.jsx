@@ -11,7 +11,7 @@ const contactus = () => {
         <div className='pdata'>
           <div className="label-input">
             <label className='label' htmlFor="name">Name: </label>
-            <input type="text" id="name" name="name" placeholder="name" required />
+            <input type="text" id="Name" name="name" placeholder="name" required />
           </div>
           <div className="label-input">
             <label className='label' htmlFor="email">Email: </label>
@@ -19,7 +19,7 @@ const contactus = () => {
           </div>
         </div>
         <label className='label' htmlFor="message">Message: </label>
-        <textarea id="message" name="message" placeholder="Write something.." rows="5" cols="90" required></textarea>
+        <textarea id="message" name="message" placeholder="Write something.." rows="5" cols="32" required></textarea>
         <Button type="submit" text="Submit" />
       </form>
     </>
