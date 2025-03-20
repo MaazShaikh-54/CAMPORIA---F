@@ -3,11 +3,10 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  background-image: url("/assets/hero-bg.jpg");
 }
 
 .hero-txt {
-  top: 50%;
+  top: 60%;
   left: 50%;
   font-weight: 300;
   font-size: 1rem;
@@ -31,7 +30,7 @@
 .large-icon {
   right: 10%;
   opacity: 0.9;
-  bottom: 6.85rem;
+  bottom: 4rem;
   font-size: 1.5rem;
   position: absolute;
 }
