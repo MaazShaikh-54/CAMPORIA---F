@@ -1,8 +1,14 @@
 import './navbar.css'
+import { useState } from 'react';
 import Button from '../Button/button'
 import { Link } from "react-router-dom";
 
-const navbar = () => {
+const Navbar = () => {
+    const [menu, setMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setMenu(true);                
+    }
 
     return (
         <>
@@ -19,21 +25,24 @@ const navbar = () => {
                         <li className="li-items"><Link to="/help" id='link'>Help</Link></li>
                         <li className="li-items"><Link to="/bookings" id='link'>Bookings</Link></li>
                         <Button text="Login / Sign up" />
-                        <button className='menu-icon-btn' >
+                        <button className='menu-icon-btn' onClick={toggleMenu} >
                             <img className="menu-icon" src="/menu-b.png" alt="Hamburger-menu" />
                         </button>
                     </ul>
-                    <div className="menu">
-                        <li className="menu-items"><Link to="/" id='link'>Home</Link></li>
-                        <li className="menu-items"><Link to="/blog" id='link'>Blog</Link></li>
-                        <li className="menu-items"><Link to="/aboutus" id='link'>About Us</Link></li>
-                        <li className="menu-items"><Link to="/help" id='link'>Help</Link></li>
-                        <li className="menu-items"><Link to="/bookings" id='link'>Bookings</Link></li>
-                    </div>
+                    {menu && (
+                        <div className="menu">
+                            <img className='close-btn' src="/close-white.png" alt="close-icon" onClick={()=>{setMenu(false)}} />
+                            <li className="menu-items"><Link to="/" id='link'>Home</Link></li>
+                            <li className="menu-items"><Link to="/blog" id='link'>Blog</Link></li>
+                            <li className="menu-items"><Link to="/aboutus" id='link'>About Us</Link></li>
+                            <li className="menu-items"><Link to="/help" id='link'>Help</Link></li>
+                            <li className="menu-items"><Link to="/bookings" id='link'>Bookings</Link></li>
+                        </div>
+                    )}
                 </nav>
             </header>
         </>
     )
 }
 
-export default navbar
+export default Navbar

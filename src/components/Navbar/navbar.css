@@ -40,33 +40,41 @@
 }
 
 .menu{
-  top: 1px;
+  top: 0px;
   width: 95%;
-  z-index: 10;
-  display: none;
+  display: block;
   list-style: none;
   position: absolute;
   align-items: center;
-  background: #1739ab;
   flex-direction: column;
+  padding-bottom: 1.2em;
+  background: linear-gradient(to bottom right, #16318a, #0e1726);
 }
 
-.menu li .menu-items{
+.menu li a{
   display: flex;
-  padding: 0.5em;
+  padding: 0.2em;
+  font-weight: 600;
   list-style: none;
   color: #f8f9fa;
+  letter-spacing: 2px;
   text-decoration: none;
   justify-content: center;
+  transition: all ease-in-out 0.3s;
 }
 
-.menu-items:hover{
+.close-btn{
+  width: 17px;
+  padding: 0.1em;
+  position: sticky;
+  margin: 0.5em 0 0 0.5em;
+}
+
+.menu-items a:hover{
   color: #0e1726;
+  transform: scale(1.15);
   background: #f8f9fa;
 }
-
-
-/* ############################################################################################## */
 
 @media screen and (min-width: 768px) {
   .logo {
