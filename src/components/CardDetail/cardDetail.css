@@ -56,14 +56,11 @@
 @media screen and (min-width: 500px) {
     .detail-container{
         margin: 2rem; 
-        color: #333;
         display: flex;
     }
     
     .detail-image{
         width: 40%;
-        object-fit: cover;
-        border-radius: 5px;
     }
     
     .detail-text{
@@ -73,11 +70,9 @@
     
     .title-campsite{
         font-size: 2rem;
-        font-weight: bold;
     }
     
     .detail-p {
-        display: flex;
         margin: 1rem 0;
         font-size: 1.2rem;
     }
@@ -86,31 +81,18 @@
         margin: 0 0.5rem;
     }
     
-    .description{
-        font-style: italic;
-    }
-    
     .detail-btn{
         display: block;
         cursor: pointer;
     }
     
     .furth_detail{
-        display: flex;
-        list-style: none;
         margin-top: 2rem;
         font-size: 1.2rem;
-        justify-content: space-between ;
     }
     
     .clock-icon{
-        float: left;
         margin: 0.1rem;
         height: 1.5rem;
-    }
-    
-    .highlight{
-        color: #ffab03;
-        font-weight: bold;
     }
 }
