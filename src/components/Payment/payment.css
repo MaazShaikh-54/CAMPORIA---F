@@ -1,25 +1,24 @@
 .pay-heading {
-  margin: 0.5rem;
   display: flex;
+  margin: 0.5rem;
   color: #ffab03;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   justify-content: center;
 }
 
 .booking-title{
   display: flex;
   color: #333;
-  font-size: 1.6rem;
+  font-size: 1.02rem;
   justify-content: center;
 }
 
 .payment {
-  padding: 2rem;
-  width: 50%;
+  padding: 1rem;
+  width: 95%;
   color: #333;
   display: block;
-  margin: 2rem 0;
-  margin-left: 25%;
+  margin: 1rem 8px;
   border-radius: 5px;
   justify-content: center;
   border: 1px solid #ccc;
@@ -27,12 +26,38 @@
 
 label{
   display:flex;
-  font-size: 1.3rem;
+  font-size: 0.85rem;
+  margin-bottom: 3px;
 }
 
 #name, #phone{
   width: 99%;
-  padding: 0.5rem;
+  padding: 0.7rem;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+@media screen and (min-width: 500px) {
+  .pay-heading {
+    font-size: 2.5rem;
+  }
+  
+  .booking-title{
+    font-size: 1.6rem;
+  }
+  
+  .payment {
+    padding: 2rem;
+    width: 50%;
+    margin: 2rem 0;
+    margin-left: 25%;
+  }
+  
+  label{
+    font-size: 1.3rem;
+  }
+  
+  #name, #phone{
+    padding: 0.5rem;
+  }  
 }
