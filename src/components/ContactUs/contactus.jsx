@@ -20,7 +20,7 @@ const contactus = () => {
         </div>
         <label className='label' htmlFor="message">Message: </label>
         <textarea id="message" name="message" placeholder="Write something.." rows="5" cols="32" required></textarea>
-        <Button type="submit" text="Submit" />
+        <Button className="submit" type="submit" text="Submit" />
       </form>
     </>
   )
