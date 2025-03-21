@@ -24,7 +24,7 @@ const Navbar = () => {
                         <li className="li-items"><Link to="/aboutus" id='link'>About Us</Link></li>
                         <li className="li-items"><Link to="/help" id='link'>Help</Link></li>
                         <li className="li-items"><Link to="/bookings" id='link'>Bookings</Link></li>
-                        <Button text="Login / Sign up" />
+                        <Button className="auth" text="Login / Sign up" />
                         <button className='menu-icon-btn' onClick={toggleMenu} >
                             <img className="menu-icon" src="/menu-b.png" alt="Hamburger-menu" />
                         </button>
