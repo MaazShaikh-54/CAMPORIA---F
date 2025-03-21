@@ -15,7 +15,6 @@ export default function Count() {
 
     const addPerson = () => {
         if (person === 5) {
-            alert("You can't book more than 5 person for a single camp tent!");
             setAddDisabled(true);
             return;
         }
