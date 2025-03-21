@@ -54,7 +54,7 @@ const Payment = ({ setBooked }) => {
                 </form  >
                 <div className="more-options">
                     <Count />
-                    <Button className="pay"  type="submit" text="Pay" onClick={()=>setBooked(navigate(`/bookings`), alert("Booked!!"))} />
+                    <Button className="pay"  type="submit" text="Pay" onClick={()=>setBooked(navigate(`/bookings`), alert("Your adventure awaits!"))} />
                 </div>
             </div>
             <Footer />
