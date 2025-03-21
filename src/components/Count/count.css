@@ -1,17 +1,20 @@
 .count-container{
     display: block;
     margin: 1rem 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     align-items: center;
 }
 
-.person-btn {
+.count-btn{
+    margin-top: 0.7rem;
+}
+
+.person-btn{
     border: none;
     color: white;
-    cursor: pointer;
-    margin-left: 1rem;
+    font-size: 1rem;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.7rem;
     background-color: #1e40af;
     transition: background-color 0.3s ease;
 }
@@ -25,4 +28,15 @@
 
 .person{
     margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 550px) {
+    .count-container{
+        font-size: 1.2rem;
+    }
+    
+    .person-btn {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }  
 }
