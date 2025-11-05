@@ -3,6 +3,7 @@ import Fuse from "fuse.js";
 import { useState, useEffect } from "react";
 import CampsiteCard from "../Card/card";
 import campsites from "./campsiteData";
+import { Search } from "lucide-react";
 import { toast } from 'react-toastify';
 
 const shuffleArray = (array) => {
@@ -81,9 +82,9 @@ const CampsiteList = () => {
           className="search-input"
           onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
         />
-        <img src="/search-blue.png" alt="search icon" className="search-btn" onClick={handleSearchClick} />
+        <Search color="#555" size={42} strokeWidth={2} className="search-btn" onClick={handleSearchClick} />
       </div>
-      {errorMessage && <div className="error-message show">Type something to explore!</div>}
+      {errorMessage && <div className="error-placeholder" />}
       <div className="campsite-card-container">
         {searchResults.map((campsite) => (
           <CampsiteCard
