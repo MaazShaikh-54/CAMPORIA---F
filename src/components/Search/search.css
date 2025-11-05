@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   color: #0e1726;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .error-message {
@@ -86,7 +86,7 @@
   }
   
   .campsite-card-container {
-    padding: 2%;
+    padding: 1%;
   }
   
   .error-message {
