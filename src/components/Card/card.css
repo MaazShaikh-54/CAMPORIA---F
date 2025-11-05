@@ -5,13 +5,12 @@
   overflow: hidden;
   border-radius: 5px;
   margin-bottom: 1.2em;
-  background: #dedede3b;
-  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .campsite-card:hover {
-  background: #dedede;
-  transform: scale(1.02);
+  background: #dedede8c;
+  transform: scale(1.005);
 }
 
 .campsite-card:hover .goToDetail {
@@ -52,20 +51,13 @@
 
 @media screen and (min-width: 700px){
   .campsite-card {
-    width: 30%;
+    width: 23%;
     border: 2px;
     padding: 1em;
     overflow: hidden;
     border-radius: 5px;
     margin-bottom: 5em;
-    background: #dedede3b;
-    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
   }
-
-.campsite-card:hover{
-  background: #dedede;
-  transform: scale(1.05);
-}
 
 .campsite-card:hover .goToDetail{
     background: #fff;
