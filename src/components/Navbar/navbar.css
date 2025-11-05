@@ -4,19 +4,15 @@
   overflow: visible;
   position: relative;
   align-items: center;
-  background: #f8f9fa;
+  /* background-color: #f5f5f5; */
   padding: 0.25rem 0.5rem;
   justify-content: space-between;
-  border-bottom: 1px solid #0e1726;
+  border-bottom: 1px solid #ccc;
 }
+
 .logo {
   display: flex;
   align-items: center;
-}
-
-.nav-logo {
-  width: 45px;
-  margin: 0.5em 0;
 }
 
 .logo-txt {
@@ -25,21 +21,23 @@
   font-family: "Averia Serif Libre", serif;
 }
 
-.li-items, .auth{
+.li-items,
+.auth-login,
+.auth-signup {
   display: none;
 }
 
-.menu-icon-btn{
+.menu-icon-btn {
   border: none;
   display: block;
   background: none;
 }
 
-.menu-icon{
+.menu-icon {
   width: 33px;
 }
 
-.menu{
+.menu {
   top: 0px;
   z-index: 10;
   width: 100%;
@@ -51,43 +49,41 @@
   flex-direction: column;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: linear-gradient(to bottom right, #16318a, #0e1726);
+  background: linear-gradient(to bottom right, #91A36F, #2D6A4F);
 }
 
-.menu li a{
+.menu li a {
   display: flex;
   padding: 1em;
-  font-weight: 500;
+  font-weight: 600;
   list-style: none;
   color: #f8f9fa;
-  font-size: 0.75rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-decoration: none;
   justify-content: center;
 }
 
-.close-btn{
+.close-btn {
   right: 4.25%;
   width: 17px;
   padding: 0.1em;
   position: absolute;
 }
 
-.menu-items a:hover{
+.menu-items a:hover {
   color: #0e1726;
   background: #f8f9fa;
   transform: scale(1.15);
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin: 0 1em;
+@media screen and (min-width: 1024px) {
+  .navbar-container {
+    padding: 1.25rem 2rem;
   }
 
-  .nav-logo {
-    width: 70px;
-    cursor: pointer;
-    margin: 2.25em 0em;
+  .logo {
+    margin: 0 1em;
   }
 
   .logo-txt {
@@ -95,15 +91,18 @@
     font-size: 2.5rem;
   }
 
-  .menu{
+  .menu {
     display: none;
   }
 
-  .navbar-container ul, .auth {
+  .navbar-container ul,
+  .auth-login,
+  .auth-signup {
     display: flex;
   }
 
-  .menu-icon-btn, .menu {
+  .menu-icon-btn,
+  .menu {
     display: none;
   }
 
@@ -116,32 +115,42 @@
   }
 
   .navbar-container ul li a {
+    display: flex;
     color: #0e1726;
-    font-weight: 300;
-    font-size: 1.2rem;
-    display: inline-block;
+    font-weight: 400;
+    font-size: 1.45rem;
+    align-items: center;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
   }
-
   .navbar-container ul li a:hover {
-    transform: scale(1.17);
+    font-weight: 600;
   }
 
-  .auth {
-    border: none;    
-    color: #f8f9fa;
-    margin: 0 1.5rem;
-    font-size: 0.8rem;
-    padding: 1em 1em;
-    border-radius: 1em;
-    background-color: #1e40af;
+  .auth-btn-container {
+    display: flex;
+  }
+
+  .auth-login,
+  .auth-signup {
+    color: #2e2e2e;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    border-radius: 8px;
+    background: #f5f5f5;
+    border: 1px solid #999;
     transition: transform 0.3s ease-in-out;
   }
-
-  .auth:hover {
+  .auth-signup {
+    border: none;
     color: #f8f9fa;
-    transform: scale(1.02);
-    background-color: #123092;
+    margin-left: 1em;
+    background-color: #91a36f;
+  }
+
+  .auth-login:hover {
+    color: #000;
+    border: 1px solid #91a36f;
   }
 }
