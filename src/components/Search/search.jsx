@@ -8,19 +8,22 @@ import { toast } from 'react-toastify';
 
 const shuffleArray = (array) => {
   return array
-    .map((value) => ({ value, sort: Math.random() })) 
-    .sort((a, b) => a.sort - b.sort) 
-    .map(({ value }) => value); 
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
 };
 
 const CampsiteList = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+  const [numOfPerson, setNumOfPerson] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [errorMessage, setErrorMessage] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
 
   useEffect(() => {
-    setSearchResults(shuffleArray(campsites)); 
+    setSearchResults(shuffleArray(campsites));
   }, []);
 
   useEffect(() => {
@@ -29,44 +32,57 @@ const CampsiteList = () => {
     }
   }, [errorMessage]);
 
+
   const fuse = new Fuse(campsites, {
     keys: ["campsiteName", "price"],
     includeScore: true,
     threshold: 0.4,
   });
 
+  const handleNumOfPerson = (event) => {
+    setNumOfPerson(event.target.value);
+    setErrorMessage(false);
+  };
+  const handleStartDate = (event) => {
+    setStartDate(event.target.value);
+    setErrorMessage(false);
+  };
+  const handleEndDate = (event) => {
+    setEndDate(event.target.value);
+    setErrorMessage(false);
+  };
   const handleSearchInput = (event) => {
     setSearchTerm(event.target.value);
-    setErrorMessage(false); 
+    setErrorMessage(false);
   };
 
   const handleSearchClick = () => {
     if (!searchTerm.trim() && !hasSearched) {
       setErrorMessage(true);
-  
-      setTimeout(() => {
-        setErrorMessage(false);
-      }, 4800); 
-  
-      const inputElement = document.querySelector(".search-input");
-    inputElement.classList.add("shake");
 
       setTimeout(() => {
-        setErrorMessage(false); // Hide completely
+        setErrorMessage(false);
+      }, 4800);
+
+      const inputElement = document.querySelector(".search-input");
+      inputElement.classList.add("shake");
+
+      setTimeout(() => {
+        setErrorMessage(false);
       }, 5000);
-  
-      setSearchResults(shuffleArray(campsites)); 
+
+      setSearchResults(shuffleArray(campsites));
       return;
     }
-  
+
     if (!searchTerm.trim()) {
       setHasSearched(false);
-      setSearchResults(shuffleArray(campsites)); 
+      setSearchResults(shuffleArray(campsites));
       return;
     }
-  
+
     const results = fuse.search(searchTerm).map((result) => result.item);
-    setSearchResults(results.length ? results : []);
+    setSearchResults(results.length ? results : ["No data found"]);
     setHasSearched(true);
   };
 
@@ -82,9 +98,38 @@ const CampsiteList = () => {
           className="search-input"
           onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
         />
+        <input
+          type="date"
+          name="search"
+          placeholder="Start date"
+          value={startDate}
+          onChange={handleStartDate}
+          className="search-input"
+          onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+        />
+        <input
+          type="date"
+          name="search"
+          placeholder="End date"
+          value={endDate}
+          onChange={handleEndDate}
+          className="search-input"
+          onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+        />
+        <input
+          type="number"
+          name="search"
+          placeholder="Number of people"
+          value={numOfPerson}
+          onChange={handleNumOfPerson}
+          className="search-input"
+          onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+        />
         <Search color="#555" size={42} strokeWidth={2} className="search-btn" onClick={handleSearchClick} />
       </div>
+
       {errorMessage && <div className="error-placeholder" />}
+
       <div className="campsite-card-container">
         {searchResults.map((campsite) => (
           <CampsiteCard
