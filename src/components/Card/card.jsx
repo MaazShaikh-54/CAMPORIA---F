@@ -19,7 +19,7 @@ const CampsiteCard = ({ id, imageUrl, campsiteName, price }) => {
           </div>
           <div className="campsite-footer">
             <p className='campsite-amenities'>WiFi • Laundry • Shower</p>
-            <p className="campsite-price"><span className='campsite-price-number'>₹{price}</span> <span className='campsite-price-text'>for a night</span></p>
+            <p className="campsite-price"><span className='campsite-price-number'>₹{price.toLocaleString('en-US')}</span> <span className='campsite-price-text'>for a night</span></p>
           </div>
         </div>
       </div>
