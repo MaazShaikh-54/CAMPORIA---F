@@ -1,97 +1,162 @@
 .campsite-card {
   width: 46%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   border: 2px;
-  padding: 0.5em;
+  padding-block: 0.5em;
   overflow: hidden;
-  border-radius: 5px;
-  margin-bottom: 1.2em;
+  position: relative;
+  margin-bottom: 1em;
   transition: all 0.2s ease-in-out;
 }
 
 .campsite-card:hover {
-  background: #dedede8c;
   transform: scale(1.005);
-}
-
-.campsite-card:hover .goToDetail {
-  background: #fff;
 }
 
 .campsite-image {
   width: 100%;
-  height: auto;
+  height: 150px;
   object-fit: cover;
-  border-radius: 2.5px;
+  border-radius: 12px;
   padding-bottom: 0.25em;
 }
 
-.campsite-name {
-  font-size: 1.5em;
-  margin-bottom: 0.2em;
+.heart-icon{
+  color: #ffffffb3;
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  z-index: 100000;
 }
 
-.campsite-footer {
+.campsite-info {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.campsite-price {
-  color: #686767;
+.campsite-badge {
+  gap: 0.5em;
+  background-color: #f5f5f5;
+  color: #0a0a0a;
+  padding: 0.25em 0.75em;
+  position: absolute;
+  top: 1.25em;
+  left: 1.25em;
+  border-radius: 12px;
+  font-size: 0.8em;
   font-weight: bold;
+}
+
+.campsite-name {
+  font-size: 1.5em;
+}
+
+.review-star {
+  gap: 0.2em;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lucide-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.campsite-footer {
+  display: flex;
+  flex-direction: column;
+  amrgin-top: auto;
+}
+
+.campsite-amenities{
   font-size: 0.7rem;
+  color: #6A6A6A;
+  font-weight: 500;
 }
 
-.goToDetail {
-  width: 28px;
-  padding: 0.2rem;
-  border-radius: 50px;
-  border: 1px solid #1a3692;
+.campsite-price {
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
-@media screen and (min-width: 700px){
+.campsite-price-number{
+  text-decoration: underline;
+  text-underline-offset: 1.1px;
+}
+
+.campsite-price-text {
+  font-size: 0.7rem;
+  color: #6A6A6A;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
   .campsite-card {
-    width: 23%;
+    width: 18%;
     border: 2px;
-    padding: 1em;
     overflow: hidden;
-    border-radius: 5px;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
   }
 
-.campsite-card:hover .goToDetail{
-    background: #fff;
-  }
-  
   .campsite-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 2.5px;
     padding-bottom: 0.5em;
   }
-  
+
+  .heart-icon{
+    width: 2.5em;
+    height: 2.5em;
+    top: 1.5em;
+    right: 1em;
+  }
+
+  .campsite-badge {
+    gap: 0.5em;
+    padding: 0.4em 1.2em;
+    top: 1.25em;
+    left: 1em;
+    font-size: 1.1em;
+  }
+
   .campsite-name {
-    font-size: 2.5em;
-    margin-bottom: 0.3em;
+    font-size: 2.3em;
   }
-  
-  .campsite-footer {
+
+  .review-star {
+    gap: 0.4em;
     display: flex;
+    font-size: 1.65em;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
   }
-  
+
+  .lucide-icon {
+    width: 1.25em;
+    height: 1.25em;
+  }
+
   .campsite-price {
-    color: #686767;
     font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .campsite-price-text {
     font-size: 1rem;
   }
 
-  .goToDetail{
-    width: 35px;
-    padding: 0.2rem;
-    border-radius: 50px;
-    border: 2px solid #1a3692;
+  .campsite-amenities{
+    font-size: 1.1rem;
   }
 }
