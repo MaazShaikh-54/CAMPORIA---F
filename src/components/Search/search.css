@@ -87,6 +87,7 @@
   
   .campsite-card-container {
     padding: 1%;
+    gap: 1.5em;
   }
   
   .error-message {
