@@ -3,6 +3,7 @@ import Fuse from "fuse.js";
 import { useState, useEffect } from "react";
 import CampsiteCard from "../Card/card";
 import campsites from "./campsiteData";
+import { toast } from 'react-toastify';
 
 const shuffleArray = (array) => {
   return array
@@ -20,6 +21,12 @@ const CampsiteList = () => {
   useEffect(() => {
     setSearchResults(shuffleArray(campsites)); 
   }, []);
+
+  useEffect(() => {
+    if (errorMessage) {
+      toast.error('Type something to explore!');
+    }
+  }, [errorMessage]);
 
   const fuse = new Fuse(campsites, {
     keys: ["campsiteName", "price"],
