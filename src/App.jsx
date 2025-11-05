@@ -7,6 +7,8 @@ import AboutUs from './pages/aboutus.jsx';
 import Bookings from './pages/bookings.jsx';
 import Payment from './components/Payment/payment.jsx';
 import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
           <Route path="/bookings" element={<Bookings />} />
           <Route path="/payment/:id" element={<Payment />} />
         </Routes>
+        <ToastContainer />
     </>
   );
 };
