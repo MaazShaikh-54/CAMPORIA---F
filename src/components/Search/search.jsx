@@ -89,43 +89,49 @@ const CampsiteList = () => {
   return (
     <div className="card-section">
       <div className="searchbox">
-        <input
-          type="search"
-          name="search"
-          placeholder="Search Destination.."
-          value={searchTerm}
-          onChange={handleSearchInput}
-          className="search-input"
-          onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
-        />
-        <input
-          type="date"
-          name="search"
-          placeholder="Start date"
-          value={startDate}
-          onChange={handleStartDate}
-          className="search-input"
-          onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
-        />
-        <input
-          type="date"
-          name="search"
-          placeholder="End date"
-          value={endDate}
-          onChange={handleEndDate}
-          className="search-input"
-          onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
-        />
-        <input
-          type="number"
-          name="search"
-          placeholder="Number of people"
-          value={numOfPerson}
-          onChange={handleNumOfPerson}
-          className="search-input"
-          onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
-        />
-        <Search color="#555" size={42} strokeWidth={2} className="search-btn" onClick={handleSearchClick} />
+        <div className="advanced-search">
+          <div className="search-bar">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search Destination.."
+              value={searchTerm}
+              onChange={handleSearchInput}
+              className="search-input"
+              onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+            />
+            <Search color="#2D6A4F" size={52} strokeWidt h={5} className="search-btn" onClick={handleSearchClick} />
+          </div>
+          <div className="campsite-filter-container">
+            <input
+              type="date"
+              name="search"
+              placeholder="Start date"
+              value={startDate}
+              onChange={handleStartDate}
+              className="search-input"
+              onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+            />
+            <input
+              type="date"
+              name="search"
+              placeholder="End date"
+              value={endDate}
+              onChange={handleEndDate}
+              className="search-input"
+              onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+            />
+            <input
+              type="number"
+              name="search"
+              placeholder="No. of Persons"
+              value={numOfPerson}
+              onChange={handleNumOfPerson}
+              className="search-input"
+              onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
+            />
+          </div>
+        </div>
       </div>
 
       {errorMessage && <div className="error-placeholder" />}
