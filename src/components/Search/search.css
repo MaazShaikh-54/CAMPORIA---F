@@ -1,60 +1,114 @@
 .searchbox {
+  height: 45vh;
   padding: 1em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   background: #f9f9f9;
   justify-content: center;
+  background-size: cover;
+  position: relative;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position: center;
   border-bottom: 0.1px solid #ccc;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("/public/assets/background/mobile.jpg");
+}
+
+.advanced-search {
+  position: absolute;
+  top: 10em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5em;
 }
 
 input[type="search"] {
-  width: 40% !important;
-  padding: 0.8em;
-  font-size: 0.9rem;
+  width: 75% !important;
+  padding: 0.9em 0.5em;
+  font-size: 0.8rem;
   border: 1px solid #ccc;
-  border-top-left-radius: 25px !important;
-  border-bottom-left-radius: 25px !important;
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-input[type="date"] {
-  width: 15% !important;
-  padding: 0.7em;
-  font-size: 0.9rem;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-left: none;
-  border-right: none;
-  border-radius: 0px !important;
+  border-radius: 25px !important;
 }
 
-input[type="date"]:nth-of-type(3) {
+.campsite-filter-container {
+  width: 90%;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="date"] {
+  color: #555;
+  width: 35% !important;
+  padding: 0.5em 0.9em;
+  font-size: 0.8rem;
+  border-radius: 0px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+input[type="date"]::before {
+  content: attr(placeholder) !important;
+  color: #000;
+  font-weight: 600;
+}
+
+input[type="date"]:nth-of-type(1) {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   border-left: 1px solid #ccc !important;
+  border-right: 1px solid #ccc !important;
 }
 
 input[type="number"] {
-  width: 12% !important;
-  padding: 0.8em;
-  font-size: 0.9rem;
+  width: 28% !important;
+  padding: 1.2em 0.25em;
+  font-size: 0.8rem;
+  text-align: center;
   border: 1px solid #ccc;
-  border-top-right-radius: 25px !important;
-  border-bottom-right-radius: 25px !important;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .search-input:focus {
   outline: none;
   border-color: #888;
+  text-align: left;
 }
 
 .search-btn {
-  width: 50px;
+  width: 37.5px;
+  height: 37.5px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.5em 1em;
 }
 
 .campsite-card-container {
   padding: 1%;
+  margin-top: 3em;
   display: flex;
   flex-wrap: wrap;
   color: #0e1726;
@@ -64,6 +118,64 @@ input[type="number"] {
 @media screen and (min-width: 1024px) {
   .searchbox {
     padding: 4em;
+    height: 40vh;
+    position: relative;
+    overflow: visible;
+    background-image: url("/public/assets/background/mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .advanced-search {
+    position: absolute;
+    top: 13em;
+    gap: 2em;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+    gap: 1em;
+  }
+
+  input[type="search"] {
+    width: 50% !important;
+    padding: 1.2em;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 25px !important;
+  }
+
+  input[type="date"] {
+    width: 25% !important;
+    padding: 1.1em 2.7em;
+    font-size: 0.9rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px !important;
+    box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.09),
+      0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    ;
+  }
+
+  input[type="date"]:nth-of-type(1) {
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+    border-left: 1px solid #ccc !important;
+  }
+
+  input[type="number"] {
+    width: 15% !important;
+    padding: 1.75em 0.8em;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
   }
 
   .search-input {
@@ -72,8 +184,14 @@ input[type="number"] {
     border-radius: 1em;
   }
 
+  .search-btn {
+    width: 38px;
+    height: 38px;
+  }
+
   .campsite-card-container {
-     padding: 1%;
+    padding: 1%;
+    margin-top: 5em;
     gap: 1.5em;
   }
 }
