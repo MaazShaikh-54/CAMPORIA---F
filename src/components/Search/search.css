@@ -1,5 +1,5 @@
 .searchbox {
-  height: 45vh;
+  height: 20em;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ input[type="number"] {
 @media screen and (min-width: 1024px) {
   .searchbox {
     padding: 4em;
-    height: 40vh;
+    height: 26em;
     position: relative;
     overflow: visible;
     background-image: url("/public/assets/background/mobile.jpg");
