@@ -2,7 +2,7 @@ import './navbar.css'
 import { useState } from 'react';
 import Button from '../Button/button'
 import { Link } from "react-router-dom";
-import { Tent } from 'lucide-react';
+import { Menu, Tent } from 'lucide-react';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
                         <Button className="auth-login" text="Login" />
                         <Button className="auth-signup" text="Sign Up" />
                         <button className='menu-icon-btn' onClick={toggleMenu} >
-                            <img className="menu-icon" src="/menu-b.png" alt="Hamburger-menu" />
+                            <Menu color='#000' strokeWidth={3} className="menu-icon" />
                         </button>
                     </div>
                 </nav>
