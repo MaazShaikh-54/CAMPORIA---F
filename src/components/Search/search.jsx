@@ -15,9 +15,9 @@ const shuffleArray = (array) => {
 
 const CampsiteList = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [startDate, setStartDate] = useState("");
-  const [endDate, setEndDate] = useState("");
-  const [numOfPerson, setNumOfPerson] = useState("");
+  const [checkIn, setCheckIn] = useState("");
+  const [checkOut, setCheckOut] = useState("");
+  const [numOfGuests, setNumOfGuests] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [errorMessage, setErrorMessage] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
@@ -39,16 +39,16 @@ const CampsiteList = () => {
     threshold: 0.4,
   });
 
-  const handleNumOfPerson = (event) => {
-    setNumOfPerson(event.target.value);
+  const handleNumOfGuests = (event) => {
+    setNumOfGuests(event.target.value);
     setErrorMessage(false);
   };
-  const handleStartDate = (event) => {
-    setStartDate(event.target.value);
+  const handleCheckIn = (event) => {
+    setCheckIn(event.target.value);
     setErrorMessage(false);
   };
-  const handleEndDate = (event) => {
-    setEndDate(event.target.value);
+  const handleCheckOut = (event) => {
+    setCheckOut(event.target.value);
     setErrorMessage(false);
   };
   const handleSearchInput = (event) => {
@@ -106,28 +106,28 @@ const CampsiteList = () => {
           <div className="campsite-filter-container">
             <input
               type="date"
-              name="search"
-              placeholder="Start date"
-              value={startDate}
-              onChange={handleStartDate}
+              name="checkin"
+              placeholder="Check-in"
+              value={checkIn}
+              onChange={handleCheckIn}
               className="search-input"
               onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
             />
             <input
               type="date"
-              name="search"
-              placeholder="End date"
-              value={endDate}
-              onChange={handleEndDate}
+              name="checkout"
+              placeholder="Check-out"
+              value={checkOut}
+              onChange={handleCheckOut}
               className="search-input"
               onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
             />
             <input
               type="number"
               name="search"
-              placeholder="No. of Persons"
-              value={numOfPerson}
-              onChange={handleNumOfPerson}
+              placeholder="Guests"
+              value={numOfGuests}
+              onChange={handleNumOfGuests}
               className="search-input"
               onKeyDown={(e) => e.key === "Enter" && handleSearchClick()}
             />
