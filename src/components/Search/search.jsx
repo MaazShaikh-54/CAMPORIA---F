@@ -89,7 +89,7 @@ const CampsiteList = () => {
   return (
     <div className="card-section">
       <div className="searchbox">
-        <h1 className="campsite-tagline">Ignite your spirit of exploration</h1>
+        {/* <h1 className="campsite-tagline">Ignite your spirit of exploration</h1> */}
         <div className="advanced-search">
           <div className="search-bar">
             <input
