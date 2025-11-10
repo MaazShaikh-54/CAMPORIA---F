@@ -169,6 +169,10 @@ input[type="number"] {
     border-radius: 25px !important;
   }
 
+  .campsite-filter-container {
+    margin-top: 1em;
+  }
+
   input[type="date"] {
     width: 25% !important;
     padding: 1.1em 2.7em;
