@@ -93,7 +93,7 @@ input[type="date"]:nth-of-type(1) {
 
 input[type="number"] {
   width: 28% !important;
-  padding: 0.7em 0.25em;
+  padding: 0.675em 0.25em;
   font-size: 0.8rem;
   text-align: center;
   border: 1px solid #ccc;
